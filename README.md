@@ -40,25 +40,31 @@ EFRO provides comprehensive coverage of key funding and compliance elements:
 
 ---
 
-## 🧠 EFRO Visualized
+## 📂 Quick Access
 
-[📖 View interactive HTML documentation](https://rgu-computing.github.io/EFRO/)
-
-![EFRO Schema](./docs/EFRO-schema.png)
+| Resource                      | Link |
+|------------------------------|------|
+| 🔗 RDF/OWL Ontology           | [EFRO.owl](./EFRO.owl) |
+| 📖 HTML Documentation         | [View Docs](https://rgu-computing.github.io/EFRO/) |
+| 🧪 Competency Questions       | [Competency_Questions.md](./Competency_Questions.md) |
+| 📄 License (CC BY 4.0)        | [View License](https://creativecommons.org/licenses/by/4.0/) |
 
 ---
 
-## 🚀 Getting Started
+## 🧾 Citation
 
-### Prerequisites
+> Umair Arshad et al., “**EFRO: An Ontology for Education Funding Compliance**,” submitted to ISWC 2025.  
+> GitHub Repo: [https://github.com/RGU-Computing/EFRO](https://github.com/RGU-Computing/EFRO)
 
-- [Protégé](https://protege.stanford.edu/) or another OWL/RDF editor  
-- Familiarity with OWL/RDF/SPARQL  
-- GitHub Pages enabled to preview documentation
+---
+
+## 🤝 Get Involved
+
+We welcome feedback, use cases, and contributions.  
+Open an issue or fork this repo to contribute.
 
 ### Installation & Setup
 
 ```bash
 git clone https://github.com/RGU-Computing/EFRO.git
-cd EFRO
-open EFRO.owl in Protégé
+
