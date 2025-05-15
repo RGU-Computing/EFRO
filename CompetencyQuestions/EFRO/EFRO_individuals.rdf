@@ -1,0 +1,1357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3id.org/EFRO/EFRO-Individuals/"
+     xml:base="http://www.w3id.org/EFRO/EFRO-Individuals/"
+     xmlns:cc="http://web.resource.org/cc/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns2="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:EFRO="http://www.w3id.org/EFRO/EFRO#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl1="http://purl.org/cerif/frapo/owl:"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:cerro="http://purl.org/cerif/cerro/"
+     xmlns:frapo="http://purl.org/cerif/frapo/"
+     xmlns:schema="http://purl.org/vocab/aiiso/schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:sw-vocab-status="http://www.w3.org/2003/06/sw-vocab-status/">
+    <owl:Ontology rdf:about="http://www.w3id.org/EFRO/EFRO-Individuals">
+        <owl:imports rdf:resource="http://www.w3id.org/EFRO/EFRO"/>
+        <dc:contributor>Ikechukwu Nkisi-Orji</dc:contributor>
+        <dc:coverage>Individuals for the educational domain including student management, program administration, funding allocation, and assessment tracking.</dc:coverage>
+        <dc:rights>This ontology is licensed under the Creative Commons Attribution 4.0 International License (CC-BY 4.0). You are free to share and adapt this ontology, provided that you give appropriate credit. More details: https://creativecommons.org/licenses/by/4.0/</dc:rights>
+        <dcterms:contributor>David Corsar</dcterms:contributor>
+        <dcterms:creator>Umair Arshad</dcterms:creator>
+        <dcterms:description>Example Individuals for the Educaton Funding Regulations Ontology (EFRO) ontology.</dcterms:description>
+        <dcterms:format>rdf/xml</dcterms:format>
+        <dcterms:language>en</dcterms:language>
+        <dcterms:title>Individuals of Educational Funding Regulations Ontology (EFRO)</dcterms:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ASLevel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ASLevel1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel"/>
+        <EFRO:hasDescription>AS Level qualification withdrawn within 5 weeks</EFRO:hasDescription>
+        <EFRO:hasEarliestStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-01T00:00:00</EFRO:hasEarliestStartDate>
+        <EFRO:hasPlannedEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-31T00:00:00</EFRO:hasPlannedEndDate>
+        <EFRO:hasTerm rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear_2024_25"/>
+        <rdfs:label>ASLevel1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ASLevel2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ASLevel2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel"/>
+        <rdfs:label>ASLevel2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ASLevel3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ASLevel3">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel"/>
+        <rdfs:label>ASLevel3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ASLevel4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ASLevel4">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel"/>
+        <rdfs:label>ASLevel4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ASLevel5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ASLevel5">
+        <rdfs:label>ASLevel5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#AberdeenLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#AberdeenLA">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LocalAuthority"/>
+        <EFRO:hasInstitutionID>AB/MCR/001</EFRO:hasInstitutionID>
+        <rdfs:label>AberdeenLA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ActiveEnrollment_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ActiveEnrollment_John">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ActiveStatus"/>
+        <EFRO:hasEnrollmentStatus>Withdrawn</EFRO:hasEnrollmentStatus>
+        <rdfs:label>ActiveEnrollment_John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#AdministrativeMeeting_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#AdministrativeMeeting_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#AdministrativeMeeting"/>
+        <EFRO:assistanceType>General</EFRO:assistanceType>
+        <EFRO:canBeUsedAsWithdrawalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</EFRO:canBeUsedAsWithdrawalDate>
+        <EFRO:hasDescription>Meeting to discuss attendance issues</EFRO:hasDescription>
+        <EFRO:isCountedAsPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</EFRO:isCountedAsPlannedHours>
+        <rdfs:label>AdministrativeMeeting_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ApprenticePlannedHours -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ApprenticePlannedHours">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasDescription>Planned hours for apprenticeship programme</EFRO:hasDescription>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</EFRO:hasOriginalPlannedHours>
+        <rdfs:label>ApprenticePlannedHours</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ApprenticeshipProvider_Northwest -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ApprenticeshipProvider_Northwest">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ApprenticeshipProvider"/>
+        <EFRO:hasInstitutionID>APP/NW/001</EFRO:hasInstitutionID>
+        <rdfs:label>ApprenticeshipProvider_Northwest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Apprenticeship_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Apprenticeship_Example">
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#ApprenticeshipProgramme"/>
+                    <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#FullTimeStudent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#AberdeenLA"/>
+        <EFRO:hasDescription>Apprenticeship started after early completion of study programme</EFRO:hasDescription>
+        <EFRO:hasFundingOverlap rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingOverlap_Example"/>
+        <EFRO:hasPlannedHours rdf:resource="http://www.w3id.org/EFRO/EFRO#ApprenticePlannedHours"/>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:label>Apprenticeship_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Apprenticeship_Progression -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Apprenticeship_Progression">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ApprenticeshipProgression"/>
+        <rdfs:label>Apprenticeship_Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#AttendanceRecord_Sept2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#AttendanceRecord_Sept2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#AttendanceActivity"/>
+        <rdfs:label>AttendanceRecord_Sept2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Business -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Business">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity"/>
+        <EFRO:hasDescription>Business Studies attendance record Sept 2024</EFRO:hasDescription>
+        <rdfs:label>Attendance_Sept2024_Business</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Computing -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Computing">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity"/>
+        <EFRO:hasDescription>Computing Studies attendance record Sept 2024</EFRO:hasDescription>
+        <rdfs:label>Attendance_Sept2024_Computing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#BlendedDelivery_Computing -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#BlendedDelivery_Computing">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#OpenLearningProvision"/>
+        <EFRO:hasDescription>Mixed delivery mode</EFRO:hasDescription>
+        <rdfs:label>BlendedDelivery_Computing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#BusinessAdmin_Certificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#BusinessAdmin_Certificate">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#QualificationAim"/>
+        <EFRO:hasAimReference>AIM/BA/001</EFRO:hasAimReference>
+        <EFRO:hasTerm rdf:resource="http://www.w3id.org/EFRO/EFRO#SummerTerm_2024"/>
+        <rdfs:label>BusinessAdmin_Certificate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#BusinessExam_Dec2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#BusinessExam_Dec2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ExaminationActivity"/>
+        <EFRO:hasDescription>Business Studies final examination</EFRO:hasDescription>
+        <rdfs:label>BusinessExam_Dec2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#BusinessStudies_Level3_FT -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#BusinessStudies_Level3_FT">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FullTimeProgram"/>
+        <EFRO:hasFundingBand rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingBand_5_FullTime"/>
+        <EFRO:hasHoursPlanned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</EFRO:hasHoursPlanned>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#BusinessAdmin_Certificate"/>
+        <EFRO:hasLearningMode rdf:resource="http://www.w3id.org/EFRO/EFRO#TraditionalDelivery_Business"/>
+        <EFRO:hasProgrammeID>PROG/BUS/L3/FT</EFRO:hasProgrammeID>
+        <EFRO:hasQualifyingPeriod rdf:resource="http://www.w3id.org/EFRO/EFRO#QualifyingPeriod_Term1"/>
+        <rdfs:label>BusinessStudies_Level3_FT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#CityCollege_Aberdeen -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#CityCollege_Aberdeen">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundedInstitution"/>
+        <EFRO:hasESFAFunding rdf:resource="http://www.w3id.org/EFRO/EFRO#ESFAFunding_2024_25"/>
+        <EFRO:hasFundingElement rdf:resource="http://www.w3id.org/EFRO/EFRO#ESFAFunding_2024_25"/>
+        <EFRO:hasInstitutionID>INST/001/ABR</EFRO:hasInstitutionID>
+        <EFRO:hasLegalDuty rdf:resource="http://www.w3id.org/EFRO/EFRO#DataReporting_2024"/>
+        <EFRO:hasLegalDuty rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingAudit_2024"/>
+        <EFRO:providesAdministrativeAssistance rdf:resource="http://www.w3id.org/EFRO/EFRO#ProgrammeRegistration_Sept2024"/>
+        <rdfs:label>CityCollege_Aberdeen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Completion_Business_Term1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Completion_Business_Term1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#CompletedSuccessfullyStatus"/>
+        <EFRO:hasCompleteStatus>Complete</EFRO:hasCompleteStatus>
+        <rdfs:label>Completion_Business_Term1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Completion_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Completion_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionStatus"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-15T00:00:00</EFRO:hasDate>
+        <EFRO:hasDescription>Early completion before apprenticeship start</EFRO:hasDescription>
+        <rdfs:label>Completion_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ComputingAssignment_Nov2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ComputingAssignment_Nov2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#AssignmentActivity"/>
+        <EFRO:hasDescription>Programming project submission</EFRO:hasDescription>
+        <rdfs:label>ComputingAssignment_Nov2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Computing_Level3_FT -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Computing_Level3_FT">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FullTimeProgram"/>
+        <EFRO:hasFundingBand rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingBand_4_PartTime"/>
+        <EFRO:hasHoursPlanned rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">580</EFRO:hasHoursPlanned>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#Programming_Diploma"/>
+        <EFRO:hasLearningMode rdf:resource="http://www.w3id.org/EFRO/EFRO#BlendedDelivery_Computing"/>
+        <EFRO:hasProgrammeID>PROG/COMP/L3/FT</EFRO:hasProgrammeID>
+        <EFRO:hasTerm rdf:resource="http://www.w3id.org/EFRO/EFRO#SummerTerm_2024"/>
+        <rdfs:label>Computing_Level3_FT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#DataReporting_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#DataReporting_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ComplianceObligation"/>
+        <EFRO:hasReference>COMP/DR/2024</EFRO:hasReference>
+        <rdfs:label>DataReporting_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#DistanceLearning_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#DistanceLearning_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#DistanceLearningProvision"/>
+        <EFRO:hasDescription>Distance learning mode with remote participation</EFRO:hasDescription>
+        <rdfs:label>DistanceLearning_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#DoubleFundingRestriction_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#DoubleFundingRestriction_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#DoubleFundingRestriction"/>
+        <EFRO:hasDescription>Student cannot receive two ESFA funding types simultaneously</EFRO:hasDescription>
+        <rdfs:label>DoubleFundingRestriction_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ESFAFunding_2024_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ESFAFunding_2024_25">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ESFAFunding"/>
+        <EFRO:hasAllocatedAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500000.00</EFRO:hasAllocatedAmount>
+        <EFRO:hasFundingID>ESFA/2024/001</EFRO:hasFundingID>
+        <EFRO:hasQualifyingPeriod rdf:resource="http://www.w3id.org/EFRO/EFRO#QualifyingPeriod_Term1"/>
+        <EFRO:hasRetentionFactor rdf:resource="http://www.w3id.org/EFRO/EFRO#RetentionFactor_2024_25"/>
+        <rdfs:label>ESFAFunding_2024_25</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#EarlyCompletion -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#EarlyCompletion">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionStatus"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-15T00:00:00</EFRO:hasDate>
+        <EFRO:hasDescription>Early completion before apprenticeship start</EFRO:hasDescription>
+        <rdfs:label>EarlyCompletion_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#EarlyCompletion_Student_AS_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#EarlyCompletion_Student_AS_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#EarlyCompletionStatus"/>
+        <rdfs:label>EarlyCompletion_Student_AS_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#EarlyProgression_Employment -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#EarlyProgression_Employment">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SustainableEmploymentStatus"/>
+        <EFRO:hasDescription>Early progression to sustainable employment</EFRO:hasDescription>
+        <rdfs:label>EarlyProgression_Employment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#EmploymentReason_Nov2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#EmploymentReason_Nov2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ProgressionReason"/>
+        <EFRO:hasDescription>Gained employment in sector</EFRO:hasDescription>
+        <rdfs:label>EmploymentReason_Nov2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Employment_Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Employment_Tom">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ProgressionReason"/>
+        <EFRO:hasDescription>Secured relevant industry position</EFRO:hasDescription>
+        <rdfs:label>Employment_Tom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ExaminationActivity_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ExaminationActivity_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ExaminationActivity"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-01T00:00:00</EFRO:hasDate>
+        <EFRO:hasDescription>Final examination for qualification achievement</EFRO:hasDescription>
+        <EFRO:isValidLearningActivity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</EFRO:isValidLearningActivity>
+        <rdfs:label>ExaminationActivity_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FirstAttendance_AfterAugust -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FirstAttendance_AfterAugust">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-05T00:00:00</EFRO:hasDate>
+        <rdfs:comment>First attendance after summer holiday</rdfs:comment>
+        <rdfs:label>FirstAttendance_AfterAugust</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FirstAttendance_PostSummer -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FirstAttendance_PostSummer">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity"/>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#Student_AS_Example"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-05T00:00:00</EFRO:hasDate>
+        <EFRO:hasDescription>First attendance after summer holiday</EFRO:hasDescription>
+        <rdfs:label>FirstAttendance_PostSummer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FiveWeekTotal -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FiveWeekTotal">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasDescription>Total hours for 5-week period (40 hours × 5 weeks)</EFRO:hasDescription>
+        <EFRO:hasHoursValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</EFRO:hasHoursValue>
+        <rdfs:label>FiveWeekTotal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FullTimeEducation_Progression -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FullTimeEducation_Progression">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FullTimeEducationProgression"/>
+        <rdfs:label>FullTimeEducation_Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FullyFunded_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FullyFunded_John">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundedStatus"/>
+        <EFRO:hasFundingStatus>Funded</EFRO:hasFundingStatus>
+        <rdfs:label>FullyFunded_John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingAudit_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingAudit_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ComplianceObligation"/>
+        <EFRO:hasReference>COMP/FA/2024</EFRO:hasReference>
+        <rdfs:label>FundingAudit_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingBand_4_PartTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingBand_4_PartTime">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingBand"/>
+        <EFRO:hasFundingID>FB/4/2024</EFRO:hasFundingID>
+        <EFRO:hasFundingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3200.00</EFRO:hasFundingValue>
+        <rdfs:label>FundingBand_4_PartTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingBand_5_FullTime -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingBand_5_FullTime">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingBand"/>
+        <EFRO:hasFundingID>FB/5/2024</EFRO:hasFundingID>
+        <EFRO:hasFundingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4500.00</EFRO:hasFundingValue>
+        <rdfs:label>FundingBand_5_FullTime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingClaim_Term1_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingClaim_Term1_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingClaimReport"/>
+        <EFRO:hasFundedStudent rdf:resource="http://www.w3id.org/EFRO/EFRO#Student_AS_Example"/>
+        <EFRO:hasIdentifier>FCR/2024/T1</EFRO:hasIdentifier>
+        <rdfs:label>FundingClaim_Term1_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingClaim_Term2_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingClaim_Term2_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingClaimReport"/>
+        <EFRO:hasFundedStudent rdf:resource="http://www.w3id.org/EFRO/EFRO#Student_AS_Example"/>
+        <EFRO:hasIdentifier>FCR/2024/T2</EFRO:hasIdentifier>
+        <rdfs:label>FundingClaim_Term2_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingOverlapStatus_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingOverlapStatus_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStatus"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-15T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T00:00:00</EFRO:hasStartDate>
+        <EFRO:relatedToFundingStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#Student_AS_Example"/>
+        <rdfs:label>FundingOverlapStatus_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingOverlap_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingOverlap_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingOverlap"/>
+        <EFRO:hasDescription>Period where study programme and apprenticeship funding overlap</EFRO:hasDescription>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:label>FundingOverlap_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingRecord_Oct2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingRecord_Oct2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#RecordFundingValue"/>
+        <EFRO:hasDescription>Monthly funding record update</EFRO:hasDescription>
+        <rdfs:label>FundingRecord_Oct2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingStatus_Year2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingStatus_Year2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#NonFundedStatus"/>
+        <EFRO:hasDescription>Not funded for second year due to not meeting start criteria</EFRO:hasDescription>
+        <rdfs:label>FundingStatus_Year2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingYear1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingYear1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:label>FundingYear1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingYear2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingYear2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:label>FundingYear2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingYear_2024_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingYear_2024_25">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasPlannedHours rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours_2024_25"/>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:comment>Academic funding year with independent planned hours</rdfs:comment>
+        <rdfs:label>FundingYear_2024_25</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#FundingYear_2025_26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#FundingYear_2025_26">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</EFRO:hasOriginalPlannedHours>
+        <EFRO:hasPlannedHours rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours_2025_26"/>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-01T00:00:00</EFRO:hasStartDate>
+        <rdfs:comment>New funding year with reset planned hours</rdfs:comment>
+        <rdfs:label>FundingYear_2025_26</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#HealthReason_Oct2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#HealthReason_Oct2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PersonalReason"/>
+        <EFRO:hasDescription>Health-related withdrawal</EFRO:hasDescription>
+        <rdfs:label>HealthReason_Oct2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#HealthWithdrawal_Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#HealthWithdrawal_Sarah">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PersonalReason"/>
+        <EFRO:hasDescription>Medical condition requiring treatment</EFRO:hasDescription>
+        <EFRO:hasWithdrawReason>Medical condition requiring treatment</EFRO:hasWithdrawReason>
+        <rdfs:label>HealthWithdrawal_Sarah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#John_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#John_Smith">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FullTimeStudent"/>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#CityCollege_Aberdeen"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#BusinessStudies_Level3_FT"/>
+        <EFRO:hasActiveParticipation rdf:resource="http://www.w3id.org/EFRO/EFRO#ActiveEnrollment_John"/>
+        <EFRO:hasActualAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Business"/>
+        <EFRO:hasExaminationResult rdf:resource="http://www.w3id.org/EFRO/EFRO#BusinessExam_Dec2024"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#BusinessAdmin_Certificate"/>
+        <EFRO:hasStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#ActiveEnrollment_John"/>
+        <EFRO:hasStudentID>STU/001/2024</EFRO:hasStudentID>
+        <EFRO:hasSuccessfulCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#Completion_Business_Term1"/>
+        <EFRO:relatedToFundingStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#FullyFunded_John"/>
+        <rdfs:label>John_Smith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity"/>
+        <EFRO:hasClassRegister rdf:resource="http://www.w3id.org/EFRO/EFRO#Register_AS_Level1"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-05T00:00:00</EFRO:hasDate>
+        <rdfs:label>LastAttendanceActivity1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity"/>
+        <EFRO:hasClassRegister rdf:resource="http://www.w3id.org/EFRO/EFRO#Register_AS_Level2"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-05T00:00:00</EFRO:hasDate>
+        <rdfs:label>LastAttendanceActivity2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity3">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity"/>
+        <EFRO:hasClassRegister rdf:resource="http://www.w3id.org/EFRO/EFRO#Register_AS_Level3"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-05T00:00:00</EFRO:hasDate>
+        <rdfs:label>LastAttendanceActivity3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity4">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity"/>
+        <EFRO:hasClassRegister rdf:resource="http://www.w3id.org/EFRO/EFRO#Register_AS_Level4"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-05T00:00:00</EFRO:hasDate>
+        <rdfs:label>LastAttendanceActivity4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#LondonLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#LondonLA">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LocalAuthority"/>
+        <EFRO:hasInstitutionID>LA/LDN/001</EFRO:hasInstitutionID>
+        <rdfs:label>LondonLA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#MetFundingCriteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#MetFundingCriteria">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStartStatus"/>
+        <rdfs:label>MetFundingCriteria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#MonthlyReturn_Sept2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#MonthlyReturn_Sept2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ReportingObligation"/>
+        <EFRO:hasReference>REP/MR/SEPT2024</EFRO:hasReference>
+        <rdfs:label>MonthlyReturn_Sept2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Mr_Brown_Teacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Mr_Brown_Teacher">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#TeachingStaff"/>
+        <EFRO:hasStaffID>STAFF/T/001</EFRO:hasStaffID>
+        <rdfs:label>Mr_Brown_Teacher</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Ms_White_Admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Ms_White_Admin">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#AdministrativeStaff"/>
+        <EFRO:hasStaffID>STAFF/A/001</EFRO:hasStaffID>
+        <rdfs:label>Ms_White_Admin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#NonFundedStatus_ASLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#NonFundedStatus_ASLevel">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#NonFundedStatus"/>
+        <EFRO:hasDescription>Not Eligible - Withdrawn before qualifying period</EFRO:hasDescription>
+        <EFRO:relatedToFundingStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#Student_AS_Example"/>
+        <rdfs:label>NonFundedStatus_ASLevel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#NonFundedYear2Status -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#NonFundedYear2Status">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#NonFundedStatus"/>
+        <EFRO:hasDescription>Not eligible for second year funding due to not meeting start criteria</EFRO:hasDescription>
+        <rdfs:label>NonFundedYear2Status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#NotMetFundingCriteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#NotMetFundingCriteria">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStartStatus"/>
+        <rdfs:label>NotMetFundingCriteria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#OpenLearning_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#OpenLearning_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#OpenLearningProvision"/>
+        <EFRO:hasDescription>Open learning follows same withdrawal date rules as traditional learning - based on last participation</EFRO:hasDescription>
+        <rdfs:label>OpenLearning_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#OtherTraining_Progression -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#OtherTraining_Progression">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#VocationalTrainingProgression"/>
+        <EFRO:hasHoursPlanned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</EFRO:hasHoursPlanned>
+        <rdfs:label>OtherTraining_Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#PlannedHours_2024_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#PlannedHours_2024_25">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</EFRO:hasOriginalPlannedHours>
+        <rdfs:label>PlannedHours_2024_25</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#PlannedHours_2025_26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#PlannedHours_2025_26">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">540</EFRO:hasOriginalPlannedHours>
+        <rdfs:label>PlannedHours_2025_26</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#PlannedHours_PostSummer -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#PlannedHours_PostSummer">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</EFRO:hasOriginalPlannedHours>
+        <EFRO:hasPeriodTotal rdf:resource="http://www.w3id.org/EFRO/EFRO#FiveWeekTotal"/>
+        <EFRO:hasTotalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</EFRO:hasTotalPlannedHours>
+        <EFRO:hasWeeklyLimit rdf:resource="http://www.w3id.org/EFRO/EFRO#WeeklyHoursLimit"/>
+        <rdfs:label>PlannedHours_PostSummer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ProgrammeAS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ProgrammeAS1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#StudyProgramme"/>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#AberdeenLA"/>
+        <EFRO:hasActualAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#FirstAttendance_PostSummer"/>
+        <EFRO:hasAdjustedPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</EFRO:hasAdjustedPlannedHours>
+        <EFRO:hasFundingBand rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingBand_5_FullTime"/>
+        <EFRO:hasFundingElement rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear_2024_25"/>
+        <EFRO:hasFundingElement rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear_2025_26"/>
+        <EFRO:hasFundingOverlap rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingOverlap_Example"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel1"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel2"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel3"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel4"/>
+        <EFRO:hasLearningMode rdf:resource="http://www.w3id.org/EFRO/EFRO#OpenLearning_Example"/>
+        <EFRO:hasOriginalPlannedHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</EFRO:hasOriginalPlannedHours>
+        <EFRO:hasPlannedHours rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours_PostSummer"/>
+        <EFRO:hasQualifyingPeriod rdf:resource="http://www.w3id.org/EFRO/EFRO#QP_6Week"/>
+        <rdfs:label>ProgrammeAS1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ProgrammeRegistration_Sept2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ProgrammeRegistration_Sept2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#RecordingActivity"/>
+        <EFRO:hasDescription>New student registration process</EFRO:hasDescription>
+        <rdfs:label>ProgrammeRegistration_Sept2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Programming_Diploma -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Programming_Diploma">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#QualificationAim"/>
+        <EFRO:hasAimReference>AIM/PROG/001</EFRO:hasAimReference>
+        <EFRO:hasTerm rdf:resource="http://www.w3id.org/EFRO/EFRO#SummerTerm_2024"/>
+        <rdfs:label>Programming_Diploma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Progression_Student_AS_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Progression_Student_AS_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ProgressionActivity"/>
+        <EFRO:hasProgressionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-05T00:00:00</EFRO:hasProgressionDate>
+        <EFRO:hasProgressionType rdf:resource="http://www.w3id.org/EFRO/EFRO#SustainableEmployment_Progression"/>
+        <rdfs:label>Progression_Student_AS_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Progression_Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Progression_Tom">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulProgression"/>
+        <rdfs:label>Progression_Tom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#QP_6Week -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#QP_6Week">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#QualifyingPeriod"/>
+        <EFRO:hasQualifyingPeriodDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</EFRO:hasQualifyingPeriodDuration>
+        <rdfs:label>QP_6Week</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#QualifyingPeriod_Term1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#QualifyingPeriod_Term1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#QualifyingPeriod"/>
+        <EFRO:hasDurationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</EFRO:hasDurationValue>
+        <rdfs:label>QualifyingPeriod_Term1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_AS_Level1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_AS_Level1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:correspondsToLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel1"/>
+        <EFRO:hasIdentifier>REG/AS1/2024</EFRO:hasIdentifier>
+        <rdfs:label>Register_AS_Level1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_AS_Level2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_AS_Level2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:correspondsToLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel2"/>
+        <EFRO:hasIdentifier>REG/AS2/2024</EFRO:hasIdentifier>
+        <rdfs:label>Register_AS_Level2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_AS_Level3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_AS_Level3">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:correspondsToLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel3"/>
+        <EFRO:hasIdentifier>REG/AS3/2024</EFRO:hasIdentifier>
+        <rdfs:label>Register_AS_Level3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_AS_Level4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_AS_Level4">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:correspondsToLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel4"/>
+        <rdfs:label>Register_AS_Level4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_Business_Term1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_Business_Term1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:hasIdentifier>REG/BUS/T1/2024</EFRO:hasIdentifier>
+        <rdfs:label>Register_Business_Term1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Register_Computing_Term1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Register_Computing_Term1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ClassRegister"/>
+        <EFRO:hasIdentifier>REG/COMP/T1/2024</EFRO:hasIdentifier>
+        <rdfs:label>Register_Computing_Term1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ReplacementASLevel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ReplacementASLevel1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#ReplacementActivity"/>
+        <EFRO:hasHoursPlanned rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</EFRO:hasHoursPlanned>
+        <rdfs:label>ReplacementASLevel1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#ReplacementActivity1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#ReplacementActivity1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#LearningAim"/>
+        <rdfs:label>ReplacementActivity1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#RetentionFactor_2024_25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#RetentionFactor_2024_25">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#RetentionFactor"/>
+        <EFRO:hasFundingID>RF/2024/001</EFRO:hasFundingID>
+        <EFRO:hasRetentionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</EFRO:hasRetentionValue>
+        <rdfs:label>RetentionFactor_2024_25</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Sarah_Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Sarah_Johnson">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FullTimeStudent"/>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#CityCollege_Aberdeen"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#Computing_Level3_FT"/>
+        <EFRO:hasActualAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Computing"/>
+        <EFRO:hasAssignmentCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#ComputingAssignment_Nov2024"/>
+        <EFRO:hasStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#Withdrawal_Date_Sarah"/>
+        <EFRO:hasStudentID>STU/002/2024</EFRO:hasStudentID>
+        <EFRO:hasWithdrawalReason rdf:resource="http://www.w3id.org/EFRO/EFRO#HealthWithdrawal_Sarah"/>
+        <rdfs:label>Sarah_Johnson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#StartCriteria_Year1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#StartCriteria_Year1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStartCriteria"/>
+        <EFRO:hasDescription>Initial year funding start requirements</EFRO:hasDescription>
+        <rdfs:label>StartCriteria_Year1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#StartCriteria_Year2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#StartCriteria_Year2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStartCriteria"/>
+        <EFRO:hasDescription>Second year funding start requirements</EFRO:hasDescription>
+        <rdfs:label>StartCriteria_Year2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#StudentRetention_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#StudentRetention_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingObligation"/>
+        <EFRO:hasReference>FUND/RET/2024</EFRO:hasReference>
+        <rdfs:label>StudentRetention_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Student_AS_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Student_AS_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#Student"/>
+        <EFRO:belongsTo rdf:resource="http://www.w3id.org/EFRO/EFRO#AberdeenLA"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#Apprenticeship_Example"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#ProgrammeAS1"/>
+        <EFRO:hasAttendanceRecord rdf:resource="http://www.w3id.org/EFRO/EFRO#AdministrativeMeeting_Example"/>
+        <EFRO:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-05T00:00:00</EFRO:hasDate>
+        <EFRO:hasDescription>Last participation record determines withdrawal date for open learning</EFRO:hasDescription>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasExaminationResult rdf:resource="http://www.w3id.org/EFRO/EFRO#ExaminationActivity_Example"/>
+        <EFRO:hasFundingStartStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#NotMetFundingCriteria"/>
+        <EFRO:hasLastAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity1"/>
+        <EFRO:hasLastAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity2"/>
+        <EFRO:hasLastAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity3"/>
+        <EFRO:hasLastAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity4"/>
+        <EFRO:hasLearningAim rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel1"/>
+        <EFRO:hasMetFundingCriteria rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</EFRO:hasMetFundingCriteria>
+        <EFRO:hasReplacementActivity rdf:resource="http://www.w3id.org/EFRO/EFRO#ReplacementASLevel1"/>
+        <EFRO:hasSuccessfulCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#Completion_Example"/>
+        <EFRO:hasSuccessfulCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#EarlyCompletion"/>
+        <EFRO:hasSuccessfulCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletion_Example"/>
+        <EFRO:hasWithdrawalFromProgrammeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-05T00:00:00</EFRO:hasWithdrawalFromProgrammeDate>
+        <EFRO:hasWithdrawalProcess rdf:resource="http://www.w3id.org/EFRO/EFRO#Withdrawal_5Week"/>
+        <EFRO:hasWithdrawnFromEntireProgramme rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</EFRO:hasWithdrawnFromEntireProgramme>
+        <rdfs:label>Student_AS_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Student_Trainee -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Student_Trainee">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#Student"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#Traineeship_Example"/>
+        <EFRO:hasProgressionActivity rdf:resource="http://www.w3id.org/EFRO/EFRO#EarlyProgression_Employment"/>
+        <rdfs:label>Student_Trainee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Student_TwoYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Student_TwoYear">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#Student"/>
+        <EFRO:enrolledIn rdf:resource="http://www.w3id.org/EFRO/EFRO#TwoYearProgramme"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-31T00:00:00</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-01T00:00:00</EFRO:hasStartDate>
+        <EFRO:hasSuccessfulCompletion rdf:resource="http://www.w3id.org/EFRO/EFRO#Year1Completion"/>
+        <EFRO:relatedToFundingStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingStatus_Year2"/>
+        <EFRO:relatedToFundingStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#NonFundedYear2Status"/>
+        <rdfs:label>Student_TwoYear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#SuccessfulCompletion_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletion_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionStatus"/>
+        <EFRO:hasDescription>Completed successfully with examination</EFRO:hasDescription>
+        <rdfs:label>SuccessfulCompletion_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#SummerTerm_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#SummerTerm_2024">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SummerTerm"/>
+        <EFRO:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-15T23:59:59</EFRO:hasEndDate>
+        <EFRO:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T00:00:00</EFRO:hasStartDate>
+        <EFRO:hasTerm rdf:resource="http://www.w3id.org/EFRO/EFRO#SummerTerm_2024"/>
+        <rdfs:label>SummerTerm_2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#SustainableEmployment_Progression -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#SustainableEmployment_Progression">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SustainableEmploymentProgression"/>
+        <rdfs:label>SustainableEmployment_Progression</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TechInstitute_London -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TechInstitute_London">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#FundedInstitution"/>
+        <EFRO:hasInstitutionID>INST/002/LDN</EFRO:hasInstitutionID>
+        <EFRO:hasLegalDuty rdf:resource="http://www.w3id.org/EFRO/EFRO#DataReporting_2024"/>
+        <EFRO:providesAdministrativeAssistance rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingRecord_Oct2024"/>
+        <rdfs:label>TechInstitute_London</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TelephoneContact_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TelephoneContact_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#TelephoneContact"/>
+        <EFRO:assistanceType>General</EFRO:assistanceType>
+        <EFRO:canBeUsedAsWithdrawalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</EFRO:canBeUsedAsWithdrawalDate>
+        <EFRO:hasDescription>Telephone call for general progress discussion</EFRO:hasDescription>
+        <EFRO:isCountedAsGuidedLearning rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</EFRO:isCountedAsGuidedLearning>
+        <rdfs:label>TelephoneContact_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Tom_Wilson -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Tom_Wilson">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#Apprentice"/>
+        <EFRO:hasStudentID>APP/001/2024</EFRO:hasStudentID>
+        <EFRO:hasSustainableEmployment rdf:resource="http://www.w3id.org/EFRO/EFRO#Employment_Tom"/>
+        <rdfs:label>Tom_Wilson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TraditionalDelivery_Business -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TraditionalDelivery_Business">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#TraditionalProvision"/>
+        <EFRO:hasDescription>Classroom-based delivery</EFRO:hasDescription>
+        <rdfs:label>TraditionalDelivery_Business</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TraditionalLearning_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TraditionalLearning_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#TraditionalProvision"/>
+        <EFRO:hasDescription>Traditional classroom-based learning</EFRO:hasDescription>
+        <rdfs:label>TraditionalLearning_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Traineeship_Example -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Traineeship_Example">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#Traineeship"/>
+        <EFRO:hasDescription>Traineeship with early progression to employment</EFRO:hasDescription>
+        <EFRO:hasQualifyingPeriod rdf:resource="http://www.w3id.org/EFRO/EFRO#QP_6Week"/>
+        <rdfs:label>Traineeship_Example</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TransportIssue_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TransportIssue_John">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#NonAttendanceReason"/>
+        <EFRO:hasDescription>Public transport disruption</EFRO:hasDescription>
+        <EFRO:hasNonAttendanceReason>Public transport disruption</EFRO:hasNonAttendanceReason>
+        <rdfs:label>TransportIssue_John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#TwoYearProgramme -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#TwoYearProgramme">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#StudyProgramme"/>
+        <EFRO:hasDescription>Two-year study programme with separate funding years</EFRO:hasDescription>
+        <EFRO:hasFundingCondition rdf:resource="http://www.w3id.org/EFRO/EFRO#StartCriteria_Year1"/>
+        <EFRO:hasFundingCondition rdf:resource="http://www.w3id.org/EFRO/EFRO#StartCriteria_Year2"/>
+        <EFRO:hasFundingElement rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear1"/>
+        <EFRO:hasFundingElement rdf:resource="http://www.w3id.org/EFRO/EFRO#FundingYear2"/>
+        <rdfs:label>TwoYearProgramme</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#WeeklyHoursLimit -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#WeeklyHoursLimit">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasDescription>Maximum hours per week limit</EFRO:hasDescription>
+        <EFRO:hasHoursValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</EFRO:hasHoursValue>
+        <rdfs:label>WeeklyHoursLimit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#WeeklyHours_Student -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#WeeklyHours_Student">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#PlannedHours"/>
+        <EFRO:hasHoursValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</EFRO:hasHoursValue>
+        <rdfs:label>WeeklyHours_Student</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Withdrawal_5Week -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Withdrawal_5Week">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#WithdrawalActivity"/>
+        <EFRO:hasDescription>Withdrawal date set to last participation date, following same rule as traditional provision</EFRO:hasDescription>
+        <EFRO:hasReplacementActivity rdf:resource="http://www.w3id.org/EFRO/EFRO#ReplacementASLevel1"/>
+        <EFRO:hasWithdrawalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-05T00:00:00</EFRO:hasWithdrawalDate>
+        <EFRO:withdrawnFrom rdf:resource="http://www.w3id.org/EFRO/EFRO#ASLevel1"/>
+        <rdfs:label>Withdrawal_5Week</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Withdrawal_Date_Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Withdrawal_Date_Sarah">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#DateOfWithdrawal"/>
+        <EFRO:hasActualAttendance rdf:resource="http://www.w3id.org/EFRO/EFRO#Attendance_Sept2024_Computing"/>
+        <EFRO:hasWithdrawalDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-15T00:00:00</EFRO:hasWithdrawalDate>
+        <EFRO:hasWithdrawalFromStudyProgramme rdf:resource="http://www.w3id.org/EFRO/EFRO#Withdrawal_Nov2024_Student2"/>
+        <EFRO:hasWithdrawnStatus rdf:resource="http://www.w3id.org/EFRO/EFRO#Withdrawal_Date_Sarah"/>
+        <rdfs:label>Withdrawal_Date_Sarah</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Withdrawal_Nov2024_Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Withdrawal_Nov2024_Student2">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#WithdrawalFromStudyProgramme"/>
+        <EFRO:hasDescription>Complete programme withdrawal</EFRO:hasDescription>
+        <EFRO:relatedToNonAttendanceReason rdf:resource="http://www.w3id.org/EFRO/EFRO#TransportIssue_John"/>
+        <rdfs:comment>Complete programme withdrawal</rdfs:comment>
+        <rdfs:label>Withdrawal_Nov2024_Student2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Withdrawal_Oct2024_Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Withdrawal_Oct2024_Student1">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#WithdrawalFromLearningAim"/>
+        <EFRO:hasDescription>Student withdrawal from Business Admin module</EFRO:hasDescription>
+        <rdfs:comment>Student withdrawal from Business Admin module</rdfs:comment>
+        <rdfs:label>Withdrawal_Oct2024_Student1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3id.org/EFRO/EFRO#Year1Completion -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/EFRO/EFRO#Year1Completion">
+        <rdf:type rdf:resource="http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionStatus"/>
+        <EFRO:hasDescription>Completed first year successfully but did not return for second year</EFRO:hasDescription>
+        <rdfs:label>Year1Completion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity"/>
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity"/>
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#NonAttendanceActivity"/>
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#QualifyingAttendanceActivity"/>
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#StudentAttendance"/>
+            <rdf:Description rdf:about="http://www.w3id.org/EFRO/EFRO#TelephoneContact"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
