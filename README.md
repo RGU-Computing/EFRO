@@ -1,44 +1,16 @@
 # 🎓 EFRO: Education Funding Regulations Ontology
 
-EFRO is a semantic framework developed to support education providers, auditors, and knowledge engineers in modelling, interpreting, and validating **UK education funding regulations**. Think of EFRO as an operating system for **funding compliance** in post-compulsory education. It provides a machine-interpretable structure of policies, monitoring activities, evidencing requirements, and institutional obligations.
+EFRO is designed to model funding rules, monitoring activities, and evidencing requirements based on the UK Department for Education’s guidance. EFRO addresses the gap in current education ontologies, which lack support for funding compliance. It enables automated reasoning and compliance checking through SPARQL queries. The ontology is evaluated using real-world competency questions and aims to support education providers in managing complex and evolving funding regulations.
+
 
 ---
 
 ## 📘 Description
 
-Educational institutions face increasing complexity in complying with funding rules issued by government bodies like the UK Department for Education. While LLMs can assist with text understanding, their hallucination risks make them unsuitable for compliance-critical scenarios. EFRO mitigates this by modelling funding rules as ontological constructs that support SPARQL-based compliance checking, policy reasoning, and evidence tracking.
+ EFRO addresses this challenge by formally modelling funding rules, monitoring activities, and documentation requirements in a machine-interpretable OWL format. It supports SPARQL-based compliance checking, policy reasoning, and evidence validation. EFRO enables education providers, auditors, system developers, and researchers to automate rule interpretation, guide funding-related decision-making, and audit institutional data against complex funding conditions, such as early withdrawals, progression, and eligibility constraints, with confidence and transparency.
 
 ---
 
-## ⚙️ Features
-
-### 🔹 Main Classes
-
-EFRO provides comprehensive coverage of key funding and compliance elements:
-
-- **Student**: A learner enrolled in a programme.
-- **StudyProgramme**: A funded course or learning aim.
-- **Traineeship**: A specialised study programme eligible for early progression rules.
-- **Activity**: Events such as withdrawal, re-enrolment, or progression.
-- **ProgressionActivity**: Movement into employment, training, or apprenticeship.
-- **FundingCondition**: Regulatory constraints tied to funding.
-- **Status, EvidenceDocument, ComplianceCriterion**: For monitoring and auditing.
-
-### 🔸 Object Properties
-
-- `enrolledIn`: Connects students to programmes.
-- `hasQualifyingPeriod`: Defines duration requirements.
-- `hasProgressionActivity`: Links a student to what they progressed into.
-- `recordedIn`: Tracks where evidence is logged.
-- `hasFundingImpact`: Relates actions to funding outcomes.
-
-### 🔸 Data Properties
-
-- `hasPlannedHours`, `hasQualifyingPeriodDuration`
-- `daysAttendedBeforeWithdrawal`
-- `plannedHoursRetained`, `progressedInWeek`
-
----
 
 ## 📂 Quick Access
 
