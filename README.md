@@ -19,7 +19,7 @@ EFRO is designed to model funding rules, monitoring activities, and evidencing r
 | 🔗 RDF/OWL Ontology                | [EFRO.rdf](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf) |
 | 🔗 RDF/OWL Individuals             | [EFRO_individuals.rdf](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO_individuals.rdf) |
 | 📖 HTML Documentation              | [View Docs](https://rgu-computing.github.io/EFRO/index-en.html)  |
-| 🧪 Competency Questions            | [Competency_Questions]((https://github.com/RGU-Computing/EFRO/blob/main/CompetencyQuestions/CompetencyQuestions.pdf)) |
+| 🧪 Competency Questions            | [Competency_Questions](https://github.com/RGU-Computing/EFRO/blob/main/CompetencyQuestions/CompetencyQuestions.pdf) |
 | 📄 License (CC BY 4.0)             | [View License](https://creativecommons.org/licenses/by/4.0/) |
 
 
