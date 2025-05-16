@@ -36,7 +36,6 @@ EFRO is designed to model funding rules, monitoring activities, and evidencing r
 
 ```bash
 git clone https://github.com/RGU-Computing/EFRO.git
-
 ---
 
 
