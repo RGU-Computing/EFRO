@@ -7,7 +7,7 @@ EFRO is designed to model funding rules, monitoring activities, and evidencing r
 
 ## 📘 Description
 
- EFRO addresses this challenge by formally modelling funding rules, monitoring activities, and documentation requirements in a machine-interpretable OWL format. It supports SPARQL-based compliance checking, policy reasoning, and evidence validation. EFRO enables education providers, auditors, system developers, and researchers to automate rule interpretation, guide funding-related decision-making, and audit institutional data against complex funding conditions, such as early withdrawals, progression, and eligibility constraints, with confidence and transparency.
+EFRO addresses challenges in educational compliance management through formal representation of funding regulations. Based on analysing regulatory complexities and administrative burdens education providers face, we present this ontology for machine-readable modelling of funding rules, evidence requirements, and monitoring processes. EFRO goes beyond existing educational ontologies by specifically representing funding regulations at both procedural and evidential levels to aid compliance verification. The ontology adheres to FAIR principles (Findable, Accessible, Interoperable, Reusable), enabling semantic interoperability and supporting automated compliance verification through SPARQL queries while providing a factual foundation to enhance AI-based regulatory systems.
 
 ---
 
