@@ -1,12 +1,12 @@
-@prefix : <http://www.w3id.org/EFRO/EFRO#> .
+@prefix : <http://www.w3id.org/efro/efro#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3id.org/EFRO/EFRO#> .
+@base <http://www.w3id.org/efro/efro#> .
 
-<http://www.w3id.org/EFRO/EFRO> rdf:type owl:Ontology ;
+<http://www.w3id.org/efro/efro> rdf:type owl:Ontology ;
                                  owl:imports <http://purl.org/cerif/frapo/> ,
                                              <http://purl.org/vocab/aiiso/schema#> ,
                                              <http://purl.org/vocab/vann/> ,
@@ -56,7 +56,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.w3id.org/EFRO/EFRO#belongsTo
+###  http://www.w3id.org/efro/efro#belongsTo
 :belongsTo rdf:type owl:ObjectProperty ;
            owl:inverseOf :includes ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -68,28 +68,28 @@
            rdfs:label "belongsTo" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#constrains
+###  http://www.w3id.org/efro/efro#constrains
 :constrains rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :TimeRelated ;
             rdfs:range :Activity .
 
 
-###  http://www.w3id.org/EFRO/EFRO#correspondsToLearningAim
+###  http://www.w3id.org/efro/efro#correspondsToLearningAim
 :correspondsToLearningAim rdf:type owl:ObjectProperty ;
                           rdfs:domain :ClassRegister ;
                           rdfs:range :LearningAim ;
                           rdfs:label "correspondsToLearningAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#defines
+###  http://www.w3id.org/efro/efro#defines
 :defines rdf:type owl:ObjectProperty ;
          rdfs:domain :FundingElement ;
          rdfs:range :FundingImpact ;
          rdfs:label "defines" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#enrolledIn
+###  http://www.w3id.org/efro/efro#enrolledIn
 :enrolledIn rdf:type owl:ObjectProperty ;
             owl:inverseOf :hasEnrollee ;
             rdfs:domain :Student ;
@@ -98,20 +98,20 @@
             rdfs:label "enrolledIn" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#evaluates
+###  http://www.w3id.org/efro/efro#evaluates
 :evaluates rdf:type owl:ObjectProperty ;
            rdfs:domain :FundingElement ;
            rdfs:range :Activity .
 
 
-###  http://www.w3id.org/EFRO/EFRO#forProgramme
+###  http://www.w3id.org/efro/efro#forProgramme
 :forProgramme rdf:type owl:ObjectProperty ;
               rdfs:domain :Status ;
               rdfs:range :StudyProgramme ;
               rdfs:comment "for programme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#fulfills
+###  http://www.w3id.org/efro/efro#fulfills
 :fulfills rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :Evidence ;
@@ -119,14 +119,14 @@
           rdfs:label "fulfills" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#givernedBy
+###  http://www.w3id.org/efro/efro#givernedBy
 :givernedBy rdf:type owl:ObjectProperty ;
             rdfs:domain :FundingRegulations ;
             rdfs:range :FundingElement ;
             rdfs:label "giverned By" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAchievementStatus
+###  http://www.w3id.org/efro/efro#hasAchievementStatus
 :hasAchievementStatus rdf:type owl:ObjectProperty ;
                       rdfs:domain :Student ;
                       rdfs:range :AchievementStatus ;
@@ -134,7 +134,7 @@
                       rdfs:label "hasAchievementStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasActiveParticipation
+###  http://www.w3id.org/efro/efro#hasActiveParticipation
 :hasActiveParticipation rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasParticipationStatus ;
                         rdfs:domain :Student ;
@@ -143,7 +143,7 @@
                         rdfs:label "hasActiveParticipation" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasActualAttendance
+###  http://www.w3id.org/efro/efro#hasActualAttendance
 :hasActualAttendance rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasAttendanceRecord ;
                      rdfs:domain :Student ;
@@ -152,7 +152,7 @@
                      rdfs:label "hasActualAttendance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAdminSystemAccount
+###  http://www.w3id.org/efro/efro#hasAdminSystemAccount
 :hasAdminSystemAccount rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasOnlineAccount ;
                        rdfs:domain :Staff ;
@@ -160,14 +160,14 @@
                        rdfs:label "hasAdminSystemAccount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAimStatus
+###  http://www.w3id.org/efro/efro#hasAimStatus
 :hasAimStatus rdf:type owl:ObjectProperty ;
               rdfs:domain :LearningAim ;
               rdfs:range :Status ;
               rdfs:label "has aim status" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasApplicationStatus
+###  http://www.w3id.org/efro/efro#hasApplicationStatus
 :hasApplicationStatus rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasStatus ;
                       rdfs:domain <http://purl.org/cerif/frapo/Application> ;
@@ -175,14 +175,14 @@
                       rdfs:label "hasApplicationStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasApplicationType
+###  http://www.w3id.org/efro/efro#hasApplicationType
 :hasApplicationType rdf:type owl:ObjectProperty ;
                     rdfs:domain <http://purl.org/cerif/frapo/Application> ;
                     rdfs:range :LearningAim ;
                     rdfs:label "hasApplicationType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasApprenticeshipFunding
+###  http://www.w3id.org/efro/efro#hasApprenticeshipFunding
 :hasApprenticeshipFunding rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasFundingElement ;
                           rdfs:domain [ rdf:type owl:Class ;
@@ -195,7 +195,7 @@
                           rdfs:label "hasApprenticeshipFunding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAssessmentRecord
+###  http://www.w3id.org/efro/efro#hasAssessmentRecord
 :hasAssessmentRecord rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isAssessmentRecord ;
                      rdfs:domain :Student ;
@@ -204,7 +204,7 @@
                      rdfs:label "hasAssessmentRecord" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAssignmentCompletion
+###  http://www.w3id.org/efro/efro#hasAssignmentCompletion
 :hasAssignmentCompletion rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasAssessmentRecord ;
                          rdfs:domain :Student ;
@@ -213,7 +213,7 @@
                          rdfs:label "hasAssignmentCompletion" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAssociatedDocument
+###  http://www.w3id.org/efro/efro#hasAssociatedDocument
 :hasAssociatedDocument rdf:type owl:ObjectProperty ;
                        rdfs:domain :Obligation ;
                        rdfs:range :Document ;
@@ -221,7 +221,7 @@
                        rdfs:label "hasAssociatedDocument" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAttendanceEvidence
+###  http://www.w3id.org/efro/efro#hasAttendanceEvidence
 :hasAttendanceEvidence rdf:type owl:ObjectProperty ;
                        rdfs:domain :LastAttendanceActivity ;
                        rdfs:range :ClassRegister ;
@@ -229,7 +229,7 @@
                        rdfs:label "hasAttendanceEvidence" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAttendanceRecord
+###  http://www.w3id.org/efro/efro#hasAttendanceRecord
 :hasAttendanceRecord rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isAttendanceRecordOf ;
                      rdfs:domain :Student ;
@@ -238,7 +238,7 @@
                      rdfs:label "hasAttendanceRecord" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasClassRegister
+###  http://www.w3id.org/efro/efro#hasClassRegister
 :hasClassRegister rdf:type owl:ObjectProperty ;
                   rdfs:domain :LastAttendanceActivity ;
                   rdfs:range :ClassRegister ;
@@ -246,7 +246,7 @@
                   rdfs:label "hasClassRegister" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasCompletionStatus
+###  http://www.w3id.org/efro/efro#hasCompletionStatus
 :hasCompletionStatus rdf:type owl:ObjectProperty ;
                      rdfs:domain [ rdf:type owl:Class ;
                                    owl:unionOf ( :CompletionStatus
@@ -258,7 +258,7 @@
                      rdfs:label "hasCompletionStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasComplianceRequirement
+###  http://www.w3id.org/efro/efro#hasComplianceRequirement
 :hasComplianceRequirement rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasLegalDuty ;
                           owl:inverseOf :isComplianceRequirementFor ;
@@ -268,7 +268,7 @@
                           rdfs:label "hasComplianceRequirement" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDistanceLearningProvision
+###  http://www.w3id.org/efro/efro#hasDistanceLearningProvision
 :hasDistanceLearningProvision rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :hasLearningMode ;
                               rdfs:domain :Learning ;
@@ -277,7 +277,7 @@
                               rdfs:label "hasDistanceLearningProvision" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDocumentation
+###  http://www.w3id.org/efro/efro#hasDocumentation
 :hasDocumentation rdf:type owl:ObjectProperty ;
                   rdfs:domain :Reason ;
                   rdfs:range :Document ;
@@ -285,7 +285,7 @@
                   rdfs:label "hasDocumentation" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDoubleFundingRestriction
+###  http://www.w3id.org/efro/efro#hasDoubleFundingRestriction
 :hasDoubleFundingRestriction rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf :hasFundingCondition ;
                              rdfs:domain :FundingElement ;
@@ -294,7 +294,7 @@
                              rdfs:label "hasDoubleFundingRestriction" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasESFAFunding
+###  http://www.w3id.org/efro/efro#hasESFAFunding
 :hasESFAFunding rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasFundingElement ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -307,7 +307,7 @@
                 rdfs:label "hasESFAFunding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEarlyCompletion
+###  http://www.w3id.org/efro/efro#hasEarlyCompletion
 :hasEarlyCompletion rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasAchievementStatus ;
                     rdfs:domain :AchievementStatus ;
@@ -316,7 +316,7 @@
                     rdfs:label "hasEarlyCompletion" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEarlyCompletionStatus
+###  http://www.w3id.org/efro/efro#hasEarlyCompletionStatus
 :hasEarlyCompletionStatus rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasParticipationStatus ;
                           rdfs:domain :Student ;
@@ -325,7 +325,7 @@
                           rdfs:label "hasEarlyCompletionStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEnrollee
+###  http://www.w3id.org/efro/efro#hasEnrollee
 :hasEnrollee rdf:type owl:ObjectProperty ;
              rdfs:domain :StudyProgramme ;
              rdfs:range :Student ;
@@ -333,7 +333,7 @@
              rdfs:label "hasEnrollee" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasExaminationResult
+###  http://www.w3id.org/efro/efro#hasExaminationResult
 :hasExaminationResult rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasAssessmentRecord ;
                       rdfs:domain :Student ;
@@ -342,7 +342,7 @@
                       rdfs:label "hasExaminationResult" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundedStudent
+###  http://www.w3id.org/efro/efro#hasFundedStudent
 :hasFundedStudent rdf:type owl:ObjectProperty ;
                   rdfs:domain :FundingClaimReport ;
                   rdfs:range :Student ;
@@ -350,7 +350,7 @@
                   rdfs:label "hasFundedStudent" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFunding
+###  http://www.w3id.org/efro/efro#hasFunding
 :hasFunding rdf:type owl:ObjectProperty ;
             owl:inverseOf :isFundedBy ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -363,7 +363,7 @@
             rdfs:label "hasFunding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingBand
+###  http://www.w3id.org/efro/efro#hasFundingBand
 :hasFundingBand rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasFundingElement ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -376,7 +376,7 @@
                 rdfs:label "hasFundingBand" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingCondition
+###  http://www.w3id.org/efro/efro#hasFundingCondition
 :hasFundingCondition rdf:type owl:ObjectProperty ;
                      rdfs:domain :FundingElement ;
                      rdfs:range :FundingCondition ;
@@ -384,7 +384,7 @@
                      rdfs:label "hasFundingCondition" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingElement
+###  http://www.w3id.org/efro/efro#hasFundingElement
 :hasFundingElement rdf:type owl:ObjectProperty ;
                    rdfs:domain [ rdf:type owl:Class ;
                                  owl:unionOf ( :Learning
@@ -396,14 +396,14 @@
                    rdfs:label "hasFundingElement" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingImpact
+###  http://www.w3id.org/efro/efro#hasFundingImpact
 :hasFundingImpact rdf:type owl:ObjectProperty ;
                   rdfs:domain :Activity ;
                   rdfs:range :FundingImpact ;
                   rdfs:label "has funding impact" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingObligation
+###  http://www.w3id.org/efro/efro#hasFundingObligation
 :hasFundingObligation rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasLegalDuty ;
                       owl:inverseOf :isFundingObligationFor ;
@@ -413,7 +413,7 @@
                       rdfs:label "hasFundingObligation" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingOverlap
+###  http://www.w3id.org/efro/efro#hasFundingOverlap
 :hasFundingOverlap rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasFundingCondition ;
                    rdfs:domain :FundingElement ;
@@ -422,7 +422,7 @@
                    rdfs:label "hasFundingOverlap" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingStartStatus
+###  http://www.w3id.org/efro/efro#hasFundingStartStatus
 :hasFundingStartStatus rdf:type owl:ObjectProperty ;
                        rdfs:domain :Student ;
                        rdfs:range :FundingStartStatus ;
@@ -430,7 +430,7 @@
                        rdfs:label "hasFundingStartStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasGroupStatus
+###  http://www.w3id.org/efro/efro#hasGroupStatus
 :hasGroupStatus rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :hasStatus ;
                 rdfs:domain <http://xmlns.com/foaf/0.1/Group> ;
@@ -438,14 +438,14 @@
                 rdfs:label "hasGroupStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasGroupType
+###  http://www.w3id.org/efro/efro#hasGroupType
 :hasGroupType rdf:type owl:ObjectProperty ;
               rdfs:domain <http://xmlns.com/foaf/0.1/Group> ;
               rdfs:range :LearningMode ;
               rdfs:label "hasGroupType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasGuidedLearning
+###  http://www.w3id.org/efro/efro#hasGuidedLearning
 :hasGuidedLearning rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasLearningMode ;
                    rdfs:domain :Learning ;
@@ -454,14 +454,14 @@
                    rdfs:label "hasGuidedLearning" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasInfrastructureType
+###  http://www.w3id.org/efro/efro#hasInfrastructureType
 :hasInfrastructureType rdf:type owl:ObjectProperty ;
                        rdfs:domain <http://purl.org/cerif/frapo/InfrastructureEntity> ;
                        rdfs:range :LearningMode ;
                        rdfs:label "hasInfrastructureType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasInitialPlannedHours
+###  http://www.w3id.org/efro/efro#hasInitialPlannedHours
 :hasInitialPlannedHours rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasPlannedHoursManagement ;
                         rdfs:domain :Learning ;
@@ -470,7 +470,7 @@
                         rdfs:label "hasInitialPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasInstitutionalAccount
+###  http://www.w3id.org/efro/efro#hasInstitutionalAccount
 :hasInstitutionalAccount rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasOnlineAccount ;
                          rdfs:domain :EducationalEntity ;
@@ -478,7 +478,7 @@
                          rdfs:label "hasInstitutionalAccount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLastAttendance
+###  http://www.w3id.org/efro/efro#hasLastAttendance
 :hasLastAttendance rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasAttendanceRecord ;
                    rdfs:domain :Student ;
@@ -487,7 +487,7 @@
                    rdfs:label "hasLastAttendance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLearningAim
+###  http://www.w3id.org/efro/efro#hasLearningAim
 :hasLearningAim rdf:type owl:ObjectProperty ;
                 rdfs:domain :StudyProgramme ;
                 rdfs:range :LearningAim ;
@@ -495,7 +495,7 @@
                 rdfs:label "hasLearningAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLearningMode
+###  http://www.w3id.org/efro/efro#hasLearningMode
 :hasLearningMode rdf:type owl:ObjectProperty ;
                  rdfs:domain :Learning ;
                  rdfs:range :LearningMode ;
@@ -503,7 +503,7 @@
                  rdfs:label "hasLearningMode" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLearningPlatformAccount
+###  http://www.w3id.org/efro/efro#hasLearningPlatformAccount
 :hasLearningPlatformAccount rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :hasOnlineAccount ;
                             rdfs:domain :Student ;
@@ -511,7 +511,7 @@
                             rdfs:label "hasLearningPlatformAccount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLegalDuty
+###  http://www.w3id.org/efro/efro#hasLegalDuty
 :hasLegalDuty rdf:type owl:ObjectProperty ;
               rdfs:domain :EducationalEntity ;
               rdfs:range :Obligation ;
@@ -519,7 +519,7 @@
               rdfs:label "hasLegalDuty" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasNonAttendance
+###  http://www.w3id.org/efro/efro#hasNonAttendance
 :hasNonAttendance rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasAttendanceRecord ;
                   rdfs:domain :Student ;
@@ -528,7 +528,7 @@
                   rdfs:label "hasNonAttendance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasNonQualificationAim
+###  http://www.w3id.org/efro/efro#hasNonQualificationAim
 :hasNonQualificationAim rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasLearningAim ;
                         rdfs:domain :StudyProgramme ;
@@ -537,14 +537,14 @@
                         rdfs:label "hasNonQualificationAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasOnlineAccount
+###  http://www.w3id.org/efro/efro#hasOnlineAccount
 :hasOnlineAccount rdf:type owl:ObjectProperty ;
                   rdfs:domain :Person ;
                   rdfs:range <http://xmlns.com/foaf/0.1/OnlineAccount> ;
                   rdfs:label "hasOnlineAccount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasOpenLearningProvision
+###  http://www.w3id.org/efro/efro#hasOpenLearningProvision
 :hasOpenLearningProvision rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasLearningMode ;
                           rdfs:domain :Learning ;
@@ -553,7 +553,7 @@
                           rdfs:label "hasOpenLearningProvision" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasParticipant
+###  http://www.w3id.org/efro/efro#hasParticipant
 :hasParticipant rdf:type owl:ObjectProperty ;
                 owl:inverseOf :participatesIn ;
                 rdfs:domain :Activity ;
@@ -562,7 +562,7 @@
                 rdfs:label "hasParticipant" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasParticipationStatus
+###  http://www.w3id.org/efro/efro#hasParticipationStatus
 :hasParticipationStatus rdf:type owl:ObjectProperty ;
                         rdfs:domain :Student ;
                         rdfs:range :ParticipationStatus ;
@@ -570,7 +570,7 @@
                         rdfs:label "hasParticipationStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPeriodTotal
+###  http://www.w3id.org/efro/efro#hasPeriodTotal
 :hasPeriodTotal rdf:type owl:ObjectProperty ;
                 rdfs:domain :PlannedHours ;
                 rdfs:range :PlannedHours ;
@@ -578,7 +578,7 @@
                 rdfs:label "hasPeriodTotal" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPersonalReason
+###  http://www.w3id.org/efro/efro#hasPersonalReason
 :hasPersonalReason rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasWithdrawalReason ;
                    rdfs:domain :WithdrawalActivity ;
@@ -587,7 +587,7 @@
                    rdfs:label "hasPersonalReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPlannedHours
+###  http://www.w3id.org/efro/efro#hasPlannedHours
 :hasPlannedHours rdf:type owl:ObjectProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
                                owl:unionOf ( :Learning
@@ -599,7 +599,7 @@
                  rdfs:label "hasPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPlannedHoursManagement
+###  http://www.w3id.org/efro/efro#hasPlannedHoursManagement
 :hasPlannedHoursManagement rdf:type owl:ObjectProperty ;
                            rdfs:domain :Learning ;
                            rdfs:range :PlannedHours ;
@@ -607,7 +607,7 @@
                            rdfs:label "hasPlannedHoursManagement" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgression
+###  http://www.w3id.org/efro/efro#hasProgression
 :hasProgression rdf:type owl:ObjectProperty ;
                 rdfs:domain :Student ;
                 rdfs:range :ProgressionActivity ;
@@ -615,7 +615,7 @@
                 rdfs:label "hasProgression" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgressionActivity
+###  http://www.w3id.org/efro/efro#hasProgressionActivity
 :hasProgressionActivity rdf:type owl:ObjectProperty ;
                         rdfs:domain :Student ;
                         rdfs:range :ProgressionActivity ;
@@ -623,7 +623,7 @@
                         rdfs:label "hasProgressionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgressionReason
+###  http://www.w3id.org/efro/efro#hasProgressionReason
 :hasProgressionReason rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasWithdrawalReason ;
                       rdfs:domain :WithdrawalActivity ;
@@ -632,7 +632,7 @@
                       rdfs:label "hasProgressionReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgressionStatus
+###  http://www.w3id.org/efro/efro#hasProgressionStatus
 :hasProgressionStatus rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasAssessmentRecord ;
                       owl:inverseOf :isProgressionStatusOf ;
@@ -642,7 +642,7 @@
                       rdfs:label "hasProgressionStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgressionType
+###  http://www.w3id.org/efro/efro#hasProgressionType
 :hasProgressionType rdf:type owl:ObjectProperty ;
                     rdfs:domain :ProgressionActivity ;
                     rdfs:range :ProgressionType ;
@@ -650,7 +650,7 @@
                     rdfs:label "hasProgressionType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasQualificationAim
+###  http://www.w3id.org/efro/efro#hasQualificationAim
 :hasQualificationAim rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasLearningAim ;
                      rdfs:domain :StudyProgramme ;
@@ -659,7 +659,7 @@
                      rdfs:label "hasQualificationAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasQualifyingPeriod
+###  http://www.w3id.org/efro/efro#hasQualifyingPeriod
 :hasQualifyingPeriod rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasFundingCondition ;
                      rdfs:domain :StudyProgramme ;
@@ -668,7 +668,7 @@
                      rdfs:label "hasQualifyingPeriod" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasQualifyingPeriodAttendance
+###  http://www.w3id.org/efro/efro#hasQualifyingPeriodAttendance
 :hasQualifyingPeriodAttendance rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :hasAttendanceRecord ;
                                rdfs:domain :FullTimeStudent ;
@@ -677,14 +677,14 @@
                                rdfs:label "hasQualifyingPeriodAttendance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasReason
+###  http://www.w3id.org/efro/efro#hasReason
 :hasReason rdf:type owl:ObjectProperty ;
            rdfs:domain :Activity ;
            rdfs:range :Reason ;
            rdfs:label "has reason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasRecordedPlannedHours
+###  http://www.w3id.org/efro/efro#hasRecordedPlannedHours
 :hasRecordedPlannedHours rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasPlannedHoursManagement ;
                          rdfs:domain :Learning ;
@@ -693,7 +693,7 @@
                          rdfs:label "hasRecordedPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasReplacementActivity
+###  http://www.w3id.org/efro/efro#hasReplacementActivity
 :hasReplacementActivity rdf:type owl:ObjectProperty ;
                         owl:inverseOf :isReplacementActivityOf ;
                         rdfs:domain :WithdrawalActivity ;
@@ -702,7 +702,7 @@
                         rdfs:label "hasReplacementActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasReportingDuty
+###  http://www.w3id.org/efro/efro#hasReportingDuty
 :hasReportingDuty rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasLegalDuty ;
                   rdfs:domain :EducationalEntity ;
@@ -711,7 +711,7 @@
                   rdfs:label "hasReportingDuty" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasRetainedStatus
+###  http://www.w3id.org/efro/efro#hasRetainedStatus
 :hasRetainedStatus rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :hasParticipationStatus ;
                    rdfs:domain :Student ;
@@ -720,7 +720,7 @@
                    rdfs:label "hasRetainedStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasRetentionFactor
+###  http://www.w3id.org/efro/efro#hasRetentionFactor
 :hasRetentionFactor rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasFundingCondition ;
                     rdfs:domain :FundingElement ;
@@ -729,14 +729,14 @@
                     rdfs:label "hasRetentionFactor" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasServiceType
+###  http://www.w3id.org/efro/efro#hasServiceType
 :hasServiceType rdf:type owl:ObjectProperty ;
                 rdfs:domain <http://purl.org/cerif/frapo/Service> ;
                 rdfs:range :LearningAspect ;
                 rdfs:label "hasServiceType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasStatus
+###  http://www.w3id.org/efro/efro#hasStatus
 :hasStatus rdf:type owl:ObjectProperty ;
            owl:inverseOf :isStatusOf ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -750,7 +750,7 @@
            rdfs:label "hasStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasSuccessfulCompletion
+###  http://www.w3id.org/efro/efro#hasSuccessfulCompletion
 :hasSuccessfulCompletion rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasAchievementStatus ;
                          rdfs:domain :AchievementStatus ;
@@ -759,7 +759,7 @@
                          rdfs:label "hasSuccessfulCompletion" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasSustainableEmployment
+###  http://www.w3id.org/efro/efro#hasSustainableEmployment
 :hasSustainableEmployment rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasAchievementStatus ;
                           rdfs:domain :AchievementStatus ;
@@ -768,7 +768,7 @@
                           rdfs:label "hasSustainableEmployment" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTerm
+###  http://www.w3id.org/efro/efro#hasTerm
 :hasTerm rdf:type owl:ObjectProperty ;
          rdfs:domain [ rdf:type owl:Class ;
                        owl:unionOf ( :LearningAim
@@ -780,7 +780,7 @@
          rdfs:label "hasTerm" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTimePeriod
+###  http://www.w3id.org/efro/efro#hasTimePeriod
 :hasTimePeriod rdf:type owl:ObjectProperty ;
                owl:inverseOf :isTimePeriodOf ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -794,7 +794,7 @@
                rdfs:label "hasTimePeriod" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTraditionalProvision
+###  http://www.w3id.org/efro/efro#hasTraditionalProvision
 :hasTraditionalProvision rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :hasLearningMode ;
                          rdfs:domain [ rdf:type owl:Class ;
@@ -811,7 +811,7 @@
                          rdfs:label "hasTraditionalProvision" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTraineeshipFunding
+###  http://www.w3id.org/efro/efro#hasTraineeshipFunding
 :hasTraineeshipFunding rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasFundingElement ;
                        rdfs:domain [ rdf:type owl:Class ;
@@ -824,7 +824,7 @@
                        rdfs:label "hasTraineeshipFunding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWeeklyLimit
+###  http://www.w3id.org/efro/efro#hasWeeklyLimit
 :hasWeeklyLimit rdf:type owl:ObjectProperty ;
                 rdfs:domain :PlannedHours ;
                 rdfs:range :PlannedHours ;
@@ -832,7 +832,7 @@
                 rdfs:label "hasWeeklyLimit" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalFromLearningAim
+###  http://www.w3id.org/efro/efro#hasWithdrawalFromLearningAim
 :hasWithdrawalFromLearningAim rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :hasWithdrawalProcess ;
                               owl:inverseOf :isWithdrawalFromLearningAimOf ;
@@ -842,7 +842,7 @@
                               rdfs:label "hasWithdrawalFromLearningAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalFromStudyProgramme
+###  http://www.w3id.org/efro/efro#hasWithdrawalFromStudyProgramme
 :hasWithdrawalFromStudyProgramme rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf :hasWithdrawalProcess ;
                                  owl:inverseOf :isWithdrawalFromStudyProgrammeOf ;
@@ -852,7 +852,7 @@
                                  rdfs:label "hasWithdrawalFromStudyProgramme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalFromWholeProgramme
+###  http://www.w3id.org/efro/efro#hasWithdrawalFromWholeProgramme
 :hasWithdrawalFromWholeProgramme rdf:type owl:ObjectProperty ;
                                  rdfs:subPropertyOf :hasWithdrawalProcess ;
                                  owl:inverseOf :isWithdrawalFromWholeProgrammeOf ;
@@ -862,7 +862,7 @@
                                  rdfs:label "hasWithdrawalFromWholeProgramme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalProcess
+###  http://www.w3id.org/efro/efro#hasWithdrawalProcess
 :hasWithdrawalProcess rdf:type owl:ObjectProperty ;
                       rdfs:domain :Student ;
                       rdfs:range :WithdrawalActivity ;
@@ -870,7 +870,7 @@
                       rdfs:label "hasWithdrawalProcess" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalReason
+###  http://www.w3id.org/efro/efro#hasWithdrawalReason
 :hasWithdrawalReason rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isWithdrawalReasonFor ;
                      rdfs:domain :WithdrawalActivity ;
@@ -879,7 +879,7 @@
                      rdfs:label "hasWithdrawalReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawnAim
+###  http://www.w3id.org/efro/efro#hasWithdrawnAim
 :hasWithdrawnAim rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasLearningAim ;
                  owl:inverseOf :isWithdrawnAimOf ;
@@ -890,7 +890,7 @@
                  rdfs:label "hasWithdrawnAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawnFromProgramme
+###  http://www.w3id.org/efro/efro#hasWithdrawnFromProgramme
 :hasWithdrawnFromProgramme rdf:type owl:ObjectProperty ;
                            rdfs:domain :Student ;
                            rdfs:range :StudyProgramme ;
@@ -898,7 +898,7 @@
                            rdfs:label "hasWithdrawnFromProgramme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawnStatus
+###  http://www.w3id.org/efro/efro#hasWithdrawnStatus
 :hasWithdrawnStatus rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasParticipationStatus ;
                     rdfs:domain :Student ;
@@ -907,7 +907,7 @@
                     rdfs:label "hasWithdrawnStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#includes
+###  http://www.w3id.org/efro/efro#includes
 :includes rdf:type owl:ObjectProperty ;
           rdfs:domain :EducationalEntity ;
           rdfs:range [ rdf:type owl:Class ;
@@ -919,7 +919,7 @@
           rdfs:label "includes" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isAssessmentRecord
+###  http://www.w3id.org/efro/efro#isAssessmentRecord
 :isAssessmentRecord rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasAssessmentRecord ;
                     rdf:type owl:FunctionalProperty ;
@@ -929,7 +929,7 @@
                     rdfs:label "isAssessmentRecord" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isAssistanceProvidedBy
+###  http://www.w3id.org/efro/efro#isAssistanceProvidedBy
 :isAssistanceProvidedBy rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :providesAssistance ;
                         owl:inverseOf :providesAssistance ;
@@ -939,7 +939,7 @@
                         rdfs:label "isAssistanceProvidedBy" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isAttendanceRecordOf
+###  http://www.w3id.org/efro/efro#isAttendanceRecordOf
 :isAttendanceRecordOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasAttendanceRecord ;
                       rdf:type owl:InverseFunctionalProperty ;
@@ -949,7 +949,7 @@
                       rdfs:label "isAttendanceRecordOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isComplianceRequirementFor
+###  http://www.w3id.org/efro/efro#isComplianceRequirementFor
 :isComplianceRequirementFor rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :hasLegalDuty ;
                             rdfs:domain :ComplianceObligation ;
@@ -958,7 +958,7 @@
                             rdfs:label "isComplianceRequirementFor" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isDocumentationRequiredBy
+###  http://www.w3id.org/efro/efro#isDocumentationRequiredBy
 :isDocumentationRequiredBy rdf:type owl:ObjectProperty ;
                            owl:inverseOf :requiresDocumentation ;
                            rdfs:domain :Document ;
@@ -967,7 +967,7 @@
                            rdfs:label "isDocumentationRequiredBy" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isFundedBy
+###  http://www.w3id.org/efro/efro#isFundedBy
 :isFundedBy rdf:type owl:ObjectProperty ;
             rdfs:domain :FundingElement ;
             rdfs:range [ rdf:type owl:Class ;
@@ -979,7 +979,7 @@
             rdfs:label "isFundedBy" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isFundingObligationFor
+###  http://www.w3id.org/efro/efro#isFundingObligationFor
 :isFundingObligationFor rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasLegalDuty ;
                         rdfs:domain :FundingObligation ;
@@ -988,7 +988,7 @@
                         rdfs:label "isFundingObligationFor" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isProgressionStatusOf
+###  http://www.w3id.org/efro/efro#isProgressionStatusOf
 :isProgressionStatusOf rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :isAssessmentRecord ;
                        rdf:type owl:FunctionalProperty ;
@@ -998,7 +998,7 @@
                        rdfs:label "isProgressionStatusOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isReasonFor
+###  http://www.w3id.org/efro/efro#isReasonFor
 :isReasonFor rdf:type owl:ObjectProperty ;
              rdfs:domain :Reason ;
              rdfs:range :Activity ;
@@ -1006,7 +1006,7 @@
              rdfs:label "isReasonFor" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isReplacementActivityOf
+###  http://www.w3id.org/efro/efro#isReplacementActivityOf
 :isReplacementActivityOf rdf:type owl:ObjectProperty ;
                          rdfs:domain :LearningAim ;
                          rdfs:range :WithdrawalActivity ;
@@ -1014,7 +1014,7 @@
                          rdfs:label "isReplacementActivityOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isStatusOf
+###  http://www.w3id.org/efro/efro#isStatusOf
 :isStatusOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Status ;
             rdfs:range [ rdf:type owl:Class ;
@@ -1027,7 +1027,7 @@
             rdfs:label "isStatusOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isStatusResultingFrom
+###  http://www.w3id.org/efro/efro#isStatusResultingFrom
 :isStatusResultingFrom rdf:type owl:ObjectProperty ;
                        owl:inverseOf :resultsInStatus ;
                        rdfs:domain :Status ;
@@ -1036,7 +1036,7 @@
                        rdfs:label "isStatusResultingFrom" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isTimePeriodOf
+###  http://www.w3id.org/efro/efro#isTimePeriodOf
 :isTimePeriodOf rdf:type owl:ObjectProperty ;
                 rdfs:domain :TimeRelated ;
                 rdfs:range [ rdf:type owl:Class ;
@@ -1049,7 +1049,7 @@
                 rdfs:label "isTimePeriodOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isWithdrawalFromLearningAimOf
+###  http://www.w3id.org/efro/efro#isWithdrawalFromLearningAimOf
 :isWithdrawalFromLearningAimOf rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :hasWithdrawalProcess ;
                                rdfs:domain :WithdrawalFromLearningAim ;
@@ -1058,7 +1058,7 @@
                                rdfs:label "isWithdrawalFromLearningAimOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isWithdrawalFromStudyProgrammeOf
+###  http://www.w3id.org/efro/efro#isWithdrawalFromStudyProgrammeOf
 :isWithdrawalFromStudyProgrammeOf rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :hasWithdrawalProcess ;
                                   rdfs:domain :WithdrawalFromStudyProgramme ;
@@ -1067,7 +1067,7 @@
                                   rdfs:label "isWithdrawalFromStudyProgrammeOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isWithdrawalFromWholeProgrammeOf
+###  http://www.w3id.org/efro/efro#isWithdrawalFromWholeProgrammeOf
 :isWithdrawalFromWholeProgrammeOf rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :hasWithdrawalProcess ;
                                   rdfs:domain :WithdrawalFromWholeProgramme ;
@@ -1076,7 +1076,7 @@
                                   rdfs:label "isWithdrawalFromWholeProgrammeOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isWithdrawalReasonFor
+###  http://www.w3id.org/efro/efro#isWithdrawalReasonFor
 :isWithdrawalReasonFor rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasWithdrawalReason ;
                        rdfs:domain :WithdrawalReason ;
@@ -1085,7 +1085,7 @@
                        rdfs:label "isWithdrawalReasonFor" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isWithdrawnAimOf
+###  http://www.w3id.org/efro/efro#isWithdrawnAimOf
 :isWithdrawnAimOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :hasLearningAim ;
                   rdf:type owl:FunctionalProperty ;
@@ -1095,14 +1095,14 @@
                   rdfs:label "isWithdrawnAimOf" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#modifies
+###  http://www.w3id.org/efro/efro#modifies
 :modifies rdf:type owl:ObjectProperty ;
           rdfs:domain :Status ;
           rdfs:range :FundingElement ;
           rdfs:label "modifies" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#participatesIn
+###  http://www.w3id.org/efro/efro#participatesIn
 :participatesIn rdf:type owl:ObjectProperty ;
                 rdfs:domain :Person ;
                 rdfs:range :Activity ;
@@ -1110,25 +1110,25 @@
                 rdfs:label "participatesIn" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#performs
+###  http://www.w3id.org/efro/efro#performs
 :performs rdf:type owl:ObjectProperty ;
           rdfs:label "performs" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#progressedFrom
+###  http://www.w3id.org/efro/efro#progressedFrom
 :progressedFrom rdf:type owl:ObjectProperty ;
                 rdfs:domain :ProgressionActivity ;
                 rdfs:range :StudyProgramme ;
                 rdfs:comment "progressed from" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#progressedTo
+###  http://www.w3id.org/efro/efro#progressedTo
 :progressedTo rdf:type owl:ObjectProperty ;
               rdfs:domain :ProgressionActivity ;
               rdfs:comment "progressed to" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#providesAdministrativeAssistance
+###  http://www.w3id.org/efro/efro#providesAdministrativeAssistance
 :providesAdministrativeAssistance rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :providesAssistance ;
                                   owl:inverseOf :receivesAdministrativeAssistanceFrom ;
@@ -1138,7 +1138,7 @@
                                   rdfs:label "providesAdministrativeAssistance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#providesAssistance
+###  http://www.w3id.org/efro/efro#providesAssistance
 :providesAssistance rdf:type owl:ObjectProperty ;
                     rdfs:domain :EducationalEntity ;
                     rdfs:range :Activity ;
@@ -1146,7 +1146,7 @@
                     rdfs:label "providesAssistance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#providesGeneralAssistance
+###  http://www.w3id.org/efro/efro#providesGeneralAssistance
 :providesGeneralAssistance rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :providesAssistance ;
                            owl:inverseOf :receivesGeneralAssistanceFrom ;
@@ -1156,14 +1156,14 @@
                            rdfs:label "providesGeneralAssistance" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#providesService
+###  http://www.w3id.org/efro/efro#providesService
 :providesService rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://purl.org/cerif/frapo/Service> ;
                  rdfs:range :Activity ;
                  rdfs:label "providesService" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#providesStudentSupport
+###  http://www.w3id.org/efro/efro#providesStudentSupport
 :providesStudentSupport rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :providesAssistance ;
                         owl:inverseOf :receivesStudentSupportfrom ;
@@ -1173,7 +1173,7 @@
                         rdfs:label "providesStudentSupport" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#receivesAdministrativeAssistanceFrom
+###  http://www.w3id.org/efro/efro#receivesAdministrativeAssistanceFrom
 :receivesAdministrativeAssistanceFrom rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf :isAssistanceProvidedBy ;
                                       rdfs:domain :AdministrativeActivity ;
@@ -1182,7 +1182,7 @@
                                       rdfs:label "receivesAdministrativeAssistanceFrom" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#receivesGeneralAssistanceFrom
+###  http://www.w3id.org/efro/efro#receivesGeneralAssistanceFrom
 :receivesGeneralAssistanceFrom rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :isAssistanceProvidedBy ;
                                rdfs:domain :GeneralAdministrativeActivity ;
@@ -1191,7 +1191,7 @@
                                rdfs:label "receivesGeneralAssistanceFrom" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#receivesStudentSupportfrom
+###  http://www.w3id.org/efro/efro#receivesStudentSupportfrom
 :receivesStudentSupportfrom rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :isAssistanceProvidedBy ;
                             rdfs:domain :SupportActivity ;
@@ -1200,14 +1200,14 @@
                             rdfs:label "receivesStudentSupportfrom" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#recordedIn
+###  http://www.w3id.org/efro/efro#recordedIn
 :recordedIn rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty ;
             rdfs:domain :Activity ;
             rdfs:range :Evidence .
 
 
-###  http://www.w3id.org/EFRO/EFRO#relatedToAdjustedPlannedHours
+###  http://www.w3id.org/efro/efro#relatedToAdjustedPlannedHours
 :relatedToAdjustedPlannedHours rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :hasPlannedHours ;
                                rdfs:domain [ rdf:type owl:Class ;
@@ -1220,7 +1220,7 @@
                                rdfs:label "relatedToAdjustedPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#relatedToExcludedHours
+###  http://www.w3id.org/efro/efro#relatedToExcludedHours
 :relatedToExcludedHours rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasPlannedHoursManagement ;
                         rdfs:domain [ rdf:type owl:Class ;
@@ -1233,7 +1233,7 @@
                         rdfs:label "relatedToExcludedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#relatedToFundingStatus
+###  http://www.w3id.org/efro/efro#relatedToFundingStatus
 :relatedToFundingStatus rdf:type owl:ObjectProperty ;
                         rdfs:domain [ rdf:type owl:Class ;
                                       owl:unionOf ( :FundingStatus
@@ -1245,7 +1245,7 @@
                         rdfs:label "relatedToFundingStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#relatedToNonAttendanceReason
+###  http://www.w3id.org/efro/efro#relatedToNonAttendanceReason
 :relatedToNonAttendanceReason rdf:type owl:ObjectProperty ;
                               rdfs:subPropertyOf :hasWithdrawalReason ;
                               rdf:type owl:FunctionalProperty ;
@@ -1259,13 +1259,13 @@
                               rdfs:label "relatedToNonAttendanceReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#requires
+###  http://www.w3id.org/efro/efro#requires
 :requires rdf:type owl:ObjectProperty ;
           rdfs:domain :FundingElement ;
           rdfs:range :Evidence .
 
 
-###  http://www.w3id.org/EFRO/EFRO#requiresDocumentation
+###  http://www.w3id.org/efro/efro#requiresDocumentation
 :requiresDocumentation rdf:type owl:ObjectProperty ;
                        rdfs:domain :Obligation ;
                        rdfs:range :Document ;
@@ -1273,20 +1273,20 @@
                        rdfs:label "requiresDocumentation" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#resets
+###  http://www.w3id.org/efro/efro#resets
 :resets rdf:type owl:ObjectProperty ;
         rdfs:domain :Activity ;
         rdfs:range :LearningAim ;
         rdfs:label "resets" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#resultsIn
+###  http://www.w3id.org/efro/efro#resultsIn
 :resultsIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Activity ;
            rdfs:label "results in" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#resultsInStatus
+###  http://www.w3id.org/efro/efro#resultsInStatus
 :resultsInStatus rdf:type owl:ObjectProperty ;
                  rdfs:domain :Reason ;
                  rdfs:range :Status ;
@@ -1294,32 +1294,32 @@
                  rdfs:label "resultsInStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#supportsActivity
+###  http://www.w3id.org/efro/efro#supportsActivity
 :supportsActivity rdf:type owl:ObjectProperty ;
                   rdfs:domain <http://purl.org/cerif/frapo/Endeavour> ;
                   rdfs:range :Activity ;
                   rdfs:label "supportsActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#supportsLearning
+###  http://www.w3id.org/efro/efro#supportsLearning
 :supportsLearning rdf:type owl:ObjectProperty ;
                   rdfs:domain <http://purl.org/cerif/frapo/InfrastructureEntity> ;
                   rdfs:range :Learning ;
                   rdfs:label "supportsLearning" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#tracksProgress
+###  http://www.w3id.org/efro/efro#tracksProgress
 :tracksProgress rdf:type owl:ObjectProperty ;
                 rdfs:domain <http://purl.org/cerif/frapo/Endeavour> ;
                 rdfs:range :Status ;
                 rdfs:label "tracksProgress" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#verifies
+###  http://www.w3id.org/efro/efro#verifies
 :verifies rdf:type owl:ObjectProperty .
 
 
-###  http://www.w3id.org/EFRO/EFRO#withdrawnFrom
+###  http://www.w3id.org/efro/efro#withdrawnFrom
 :withdrawnFrom rdf:type owl:ObjectProperty ;
                rdfs:domain :WithdrawalActivity ;
                rdfs:range :LearningAim ;
@@ -1383,7 +1383,7 @@
                                                       rdfs:label "has registration deadline"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#assistanceType
+###  http://www.w3id.org/efro/efro#assistanceType
 :assistanceType rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Activity ;
                 rdfs:range xsd:string ;
@@ -1391,7 +1391,7 @@
                 rdfs:label "assistanceType"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#canBeUsedAsWithdrawalDate
+###  http://www.w3id.org/efro/efro#canBeUsedAsWithdrawalDate
 :canBeUsedAsWithdrawalDate rdf:type owl:DatatypeProperty ;
                            rdfs:domain :Activity ;
                            rdfs:range xsd:boolean ;
@@ -1399,7 +1399,7 @@
                            rdfs:label "canBeUsedAsWithdrawalDate"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasActualDeliveredHours
+###  http://www.w3id.org/efro/efro#hasActualDeliveredHours
 :hasActualDeliveredHours rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf :hasHoursValue ;
                          rdfs:domain :PlannedHours ;
@@ -1415,7 +1415,7 @@
                          rdfs:label "hasActualDeliveredHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasActualDuration
+###  http://www.w3id.org/efro/efro#hasActualDuration
 :hasActualDuration rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasDurationValue ;
                    rdfs:domain :Learning ;
@@ -1429,7 +1429,7 @@
                    rdfs:label "hasActualDuration" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAdjustedAmount
+###  http://www.w3id.org/efro/efro#hasAdjustedAmount
 :hasAdjustedAmount rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasFundingValue ;
                    rdfs:domain :FundingElement ;
@@ -1443,7 +1443,7 @@
                    rdfs:label "hasAdjustedAmount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAdjustedHours
+###  http://www.w3id.org/efro/efro#hasAdjustedHours
 :hasAdjustedHours rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :hasHoursValue ;
                   rdfs:domain :PlannedHours ;
@@ -1459,7 +1459,7 @@
                   rdfs:label "hasAdjustedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAdjustedPlannedHours
+###  http://www.w3id.org/efro/efro#hasAdjustedPlannedHours
 :hasAdjustedPlannedHours rdf:type owl:DatatypeProperty ;
                          rdfs:domain :AdjustedPlannedHours ;
                          rdfs:range xsd:integer ;
@@ -1467,7 +1467,7 @@
                          rdfs:label "hasAdjustedPlannedHours"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAdjustmentReason
+###  http://www.w3id.org/efro/efro#hasAdjustmentReason
 :hasAdjustmentReason rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasDescription ;
                      rdf:type owl:FunctionalProperty ;
@@ -1481,7 +1481,7 @@
                      rdfs:label "hasAdjustmentReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAimReference
+###  http://www.w3id.org/efro/efro#hasAimReference
 :hasAimReference rdf:type owl:DatatypeProperty ;
                  rdfs:domain :QualificationAim ;
                  rdfs:range xsd:string ;
@@ -1489,7 +1489,7 @@
                  rdfs:label "hasAimReference"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAllocatedAmount
+###  http://www.w3id.org/efro/efro#hasAllocatedAmount
 :hasAllocatedAmount rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasFundingValue ;
                     rdfs:domain :FundingElement ;
@@ -1503,7 +1503,7 @@
                     rdfs:label "hasAllocatedAmount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasAttendanceStatus
+###  http://www.w3id.org/efro/efro#hasAttendanceStatus
 :hasAttendanceStatus rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasStatusValue ;
                      rdfs:domain :AttendanceStatus ;
@@ -1526,7 +1526,7 @@
                      rdfs:label "hasAttendanceStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasCompleteStatus
+###  http://www.w3id.org/efro/efro#hasCompleteStatus
 :hasCompleteStatus rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasStatusValue ;
                    rdfs:domain :CompletionStatus ;
@@ -1546,7 +1546,7 @@
                    rdfs:label "hasCompleteStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasCompletionDate
+###  http://www.w3id.org/efro/efro#hasCompletionDate
 :hasCompletionDate rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasTemporalValue ;
                    rdfs:domain [ rdf:type owl:Class ;
@@ -1559,7 +1559,7 @@
                    rdfs:label "hasCompletionDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasCompletionDetails
+###  http://www.w3id.org/efro/efro#hasCompletionDetails
 :hasCompletionDetails rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasDescription ;
                       rdf:type owl:FunctionalProperty ;
@@ -1569,7 +1569,7 @@
                       rdfs:label "hasCompletionDetails" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDate
+###  http://www.w3id.org/efro/efro#hasDate
 :hasDate rdf:type owl:DatatypeProperty ;
          rdfs:domain [ rdf:type owl:Class ;
                        owl:unionOf ( :Activity
@@ -1581,7 +1581,7 @@
          rdfs:label "hasDate"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDescription
+###  http://www.w3id.org/efro/efro#hasDescription
 :hasDescription rdf:type owl:DatatypeProperty ;
                 rdfs:domain [ rdf:type owl:Class ;
                               owl:unionOf ( :Activity
@@ -1601,7 +1601,7 @@
                 rdfs:label "hasDescription" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasDurationValue
+###  http://www.w3id.org/efro/efro#hasDurationValue
 :hasDurationValue rdf:type owl:DatatypeProperty ;
                   rdfs:domain :TimeRelated ;
                   rdfs:range xsd:integer ;
@@ -1609,7 +1609,7 @@
                   rdfs:label "hasDurationValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEarliestStartDate
+###  http://www.w3id.org/efro/efro#hasEarliestStartDate
 :hasEarliestStartDate rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasTemporalValue ;
                       rdfs:domain :LearningAim ;
@@ -1618,7 +1618,7 @@
                       rdfs:label "hasEarliestStartDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEndDate
+###  http://www.w3id.org/efro/efro#hasEndDate
 :hasEndDate rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :hasTemporalValue ;
             rdfs:domain :FundingYear ;
@@ -1627,7 +1627,7 @@
             rdfs:label "hasEndDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasEnrollmentStatus
+###  http://www.w3id.org/efro/efro#hasEnrollmentStatus
 :hasEnrollmentStatus rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :hasStatusValue ;
                      rdfs:domain :EnrollmentStatus ;
@@ -1647,7 +1647,7 @@
                      rdfs:label "hasEnrollmentStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasExcludedHours
+###  http://www.w3id.org/efro/efro#hasExcludedHours
 :hasExcludedHours rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :hasHoursValue ;
                   rdfs:domain :ExcludedHours ;
@@ -1656,7 +1656,7 @@
                   rdfs:label "hasExcludedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingID
+###  http://www.w3id.org/efro/efro#hasFundingID
 :hasFundingID rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasIdentifier ;
               rdfs:domain :FundingElement ;
@@ -1665,7 +1665,7 @@
               rdfs:label "hasFundingID" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingStatus
+###  http://www.w3id.org/efro/efro#hasFundingStatus
 :hasFundingStatus rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :hasStatusValue ;
                   rdfs:domain :FundingStatus ;
@@ -1685,7 +1685,7 @@
                   rdfs:label "hasFundingStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasFundingValue
+###  http://www.w3id.org/efro/efro#hasFundingValue
 :hasFundingValue rdf:type owl:DatatypeProperty ;
                  rdfs:domain :FundingElement ;
                  rdfs:range xsd:decimal ;
@@ -1693,7 +1693,7 @@
                  rdfs:label "hasFundingValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasHoursPlanned
+###  http://www.w3id.org/efro/efro#hasHoursPlanned
 :hasHoursPlanned rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :hasHoursValue ;
                  rdfs:domain :PlannedHours ;
@@ -1702,7 +1702,7 @@
                  rdfs:label "hasHoursPlanned" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasHoursValue
+###  http://www.w3id.org/efro/efro#hasHoursValue
 :hasHoursValue rdf:type owl:DatatypeProperty ;
                rdfs:domain :PlannedHours ;
                rdfs:range xsd:integer ;
@@ -1710,7 +1710,7 @@
                rdfs:label "hasHoursValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasIdentifier
+###  http://www.w3id.org/efro/efro#hasIdentifier
 :hasIdentifier rdf:type owl:DatatypeProperty ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( :Activity
@@ -1730,7 +1730,7 @@
                rdfs:label "hasIdentifier" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasInstitutionID
+###  http://www.w3id.org/efro/efro#hasInstitutionID
 :hasInstitutionID rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :hasIdentifier ;
                   rdfs:domain :EducationalEntity ;
@@ -1739,7 +1739,7 @@
                   rdfs:label "hasInstitutionID" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasLastAttendanceDate
+###  http://www.w3id.org/efro/efro#hasLastAttendanceDate
 :hasLastAttendanceDate rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf :hasTemporalValue ;
                        rdfs:domain [ rdf:type owl:Class ;
@@ -1752,7 +1752,7 @@
                        rdfs:label "hasLastAttendanceDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasMetFundingCriteria
+###  http://www.w3id.org/efro/efro#hasMetFundingCriteria
 :hasMetFundingCriteria rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Student ;
                        rdfs:range xsd:boolean ;
@@ -1760,7 +1760,7 @@
                        rdfs:label "hasMetFundingCriteria"@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasNonAttendanceReason
+###  http://www.w3id.org/efro/efro#hasNonAttendanceReason
 :hasNonAttendanceReason rdf:type owl:DatatypeProperty ;
                         rdfs:subPropertyOf :hasDescription ;
                         rdf:type owl:FunctionalProperty ;
@@ -1770,7 +1770,7 @@
                         rdfs:label "hasNonAttendanceReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasOriginalPlannedHours
+###  http://www.w3id.org/efro/efro#hasOriginalPlannedHours
 :hasOriginalPlannedHours rdf:type owl:DatatypeProperty ;
                          rdfs:domain :PlannedHours ;
                          rdfs:range xsd:integer ;
@@ -1778,7 +1778,7 @@
                          rdfs:label "hasOriginalPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPlannedDuration
+###  http://www.w3id.org/efro/efro#hasPlannedDuration
 :hasPlannedDuration rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasDurationValue ;
                     rdfs:domain :Learning ;
@@ -1792,7 +1792,7 @@
                     rdfs:label "hasPlannedDuration" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasPlannedEndDate
+###  http://www.w3id.org/efro/efro#hasPlannedEndDate
 :hasPlannedEndDate rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasTemporalValue ;
                    rdfs:domain [ rdf:type owl:Class ;
@@ -1805,7 +1805,7 @@
                    rdfs:label "hasPlannedEndDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgrammeID
+###  http://www.w3id.org/efro/efro#hasProgrammeID
 :hasProgrammeID rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :hasIdentifier ;
                 rdfs:domain :StudyProgramme ;
@@ -1814,7 +1814,7 @@
                 rdfs:label "hasProgrammeID" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasProgressionDate
+###  http://www.w3id.org/efro/efro#hasProgressionDate
 :hasProgressionDate rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasTemporalValue ;
                     rdfs:domain :ProgressionActivity ;
@@ -1823,7 +1823,7 @@
                     rdfs:label "hasProgressionDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasQualifyingDate
+###  http://www.w3id.org/efro/efro#hasQualifyingDate
 :hasQualifyingDate rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasTemporalValue ;
                    rdfs:domain :QualifyingPeriod ;
@@ -1832,7 +1832,7 @@
                    rdfs:label "hasQualifyingDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasQualifyingPeriodDuration
+###  http://www.w3id.org/efro/efro#hasQualifyingPeriodDuration
 :hasQualifyingPeriodDuration rdf:type owl:DatatypeProperty ;
                              rdfs:subPropertyOf :hasDurationValue ;
                              rdfs:domain :QualifyingPeriod ;
@@ -1846,7 +1846,7 @@
                              rdfs:label "hasQualifyingPeriodDuration" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasReductionAmount
+###  http://www.w3id.org/efro/efro#hasReductionAmount
 :hasReductionAmount rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasFundingValue ;
                     rdfs:domain :FundingElement ;
@@ -1860,7 +1860,7 @@
                     rdfs:label "hasReductionAmount" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasReference
+###  http://www.w3id.org/efro/efro#hasReference
 :hasReference rdf:type owl:DatatypeProperty ;
               rdfs:domain :Obligation ;
               rdfs:range xsd:string ;
@@ -1868,7 +1868,7 @@
               rdfs:label "hasReference" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasRetentionValue
+###  http://www.w3id.org/efro/efro#hasRetentionValue
 :hasRetentionValue rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasFundingValue ;
                    rdfs:domain :FundingElement ;
@@ -1884,7 +1884,7 @@
                    rdfs:label "hasRetentionValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasStaffID
+###  http://www.w3id.org/efro/efro#hasStaffID
 :hasStaffID rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :hasIdentifier ;
             rdfs:domain :Staff ;
@@ -1893,7 +1893,7 @@
             rdfs:label "hasStaffID" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasStartDate
+###  http://www.w3id.org/efro/efro#hasStartDate
 :hasStartDate rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasTemporalValue ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -1907,7 +1907,7 @@
               rdfs:label "hasStartDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasStatusValue
+###  http://www.w3id.org/efro/efro#hasStatusValue
 :hasStatusValue rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Status ;
                 rdfs:range xsd:string ;
@@ -1915,7 +1915,7 @@
                 rdfs:label "hasStatusValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasStudentID
+###  http://www.w3id.org/efro/efro#hasStudentID
 :hasStudentID rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :hasIdentifier ;
               rdfs:domain :Student ;
@@ -1924,7 +1924,7 @@
               rdfs:label "hasStudentID" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTemporalValue
+###  http://www.w3id.org/efro/efro#hasTemporalValue
 :hasTemporalValue rdf:type owl:DatatypeProperty ;
                   rdfs:domain :TimeRelated ;
                   rdfs:range xsd:dateTime ;
@@ -1932,7 +1932,7 @@
                   rdfs:label "hasTemporalValue" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasTotalPlannedHours
+###  http://www.w3id.org/efro/efro#hasTotalPlannedHours
 :hasTotalPlannedHours rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf :hasHoursValue ;
                       rdfs:domain :PlannedHours ;
@@ -1948,7 +1948,7 @@
                       rdfs:label "hasTotalPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWeeksDuration
+###  http://www.w3id.org/efro/efro#hasWeeksDuration
 :hasWeeksDuration rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :hasDurationValue ;
                   rdfs:domain :TimeRelated ;
@@ -1962,7 +1962,7 @@
                   rdfs:label "hasWeeksDuration" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawReason
+###  http://www.w3id.org/efro/efro#hasWithdrawReason
 :hasWithdrawReason rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasDescription ;
                    rdf:type owl:FunctionalProperty ;
@@ -1972,7 +1972,7 @@
                    rdfs:label "hasWithdrawReason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalDate
+###  http://www.w3id.org/efro/efro#hasWithdrawalDate
 :hasWithdrawalDate rdf:type owl:DatatypeProperty ;
                    rdfs:subPropertyOf :hasTemporalValue ;
                    rdfs:domain :WithdrawalActivity ;
@@ -1981,7 +1981,7 @@
                    rdfs:label "hasWithdrawalDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawalFromProgrammeDate
+###  http://www.w3id.org/efro/efro#hasWithdrawalFromProgrammeDate
 :hasWithdrawalFromProgrammeDate rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :Student ;
                                 rdfs:range xsd:dateTime ;
@@ -1989,7 +1989,7 @@
                                 rdfs:label "hasWithdrawalFromProgrammeDate" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#hasWithdrawnFromEntireProgramme
+###  http://www.w3id.org/efro/efro#hasWithdrawnFromEntireProgramme
 :hasWithdrawnFromEntireProgramme rdf:type owl:DatatypeProperty ;
                                  rdfs:domain :Student ;
                                  rdfs:range xsd:boolean ;
@@ -1997,7 +1997,7 @@
                                  rdfs:label "hasWithdrawnFromEntireProgramme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isCountedAsGuidedLearning
+###  http://www.w3id.org/efro/efro#isCountedAsGuidedLearning
 :isCountedAsGuidedLearning rdf:type owl:DatatypeProperty ,
                                     owl:FunctionalProperty ;
                            rdfs:domain :Activity ;
@@ -2006,7 +2006,7 @@
                            rdfs:label "isCountedAsGuidedLearning" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isCountedAsPlannedHours
+###  http://www.w3id.org/efro/efro#isCountedAsPlannedHours
 :isCountedAsPlannedHours rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
                          rdfs:domain :Activity ;
@@ -2015,7 +2015,7 @@
                          rdfs:label "isCountedAsPlannedHours" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#isValidLearningActivity
+###  http://www.w3id.org/efro/efro#isValidLearningActivity
 :isValidLearningActivity rdf:type owl:DatatypeProperty ,
                                   owl:FunctionalProperty ;
                          rdfs:domain :ExaminationActivity ;
@@ -2024,7 +2024,7 @@
                          rdfs:label "isValidLearningActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#progressedInWeek
+###  http://www.w3id.org/efro/efro#progressedInWeek
 :progressedInWeek rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ProgressionActivity ;
                   rdfs:range xsd:integer .
@@ -2089,7 +2089,7 @@
                                                             <http://xmlns.com/foaf/0.1/Organization> .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ASLevel
+###  http://www.w3id.org/efro/efro#ASLevel
 :ASLevel rdf:type owl:Class ;
          rdfs:subClassOf :Qualification ;
          <http://purl.org/dc/terms/description> "A standalone qualification representing the first year of A Level study." ;
@@ -2097,14 +2097,14 @@
          <http://www.w3.org/2004/02/skos/core#example> "AS Level qualifications in Mathematics or English." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AcademicProgressionActivity
+###  http://www.w3id.org/efro/efro#AcademicProgressionActivity
 :AcademicProgressionActivity rdf:type owl:Class ;
                              rdfs:subClassOf :ProgressionActivity ;
                              <http://purl.org/dc/terms/description> "Progression activities focusing on advancing a student’s academic qualifications or study program." ;
                              rdfs:label "AcademicProgressionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AcademicYear
+###  http://www.w3id.org/efro/efro#AcademicYear
 :AcademicYear rdf:type owl:Class ;
               rdfs:subClassOf :TimePeriod ;
               <http://purl.org/dc/terms/description> "A standard 12-month period during which educational activities occur, typically running from September to August." ;
@@ -2112,14 +2112,14 @@
               <http://www.w3.org/2004/02/skos/core#example> "The academic year structure used to plan funding, timetables, and reporting for study programs​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AchievementStatus
+###  http://www.w3id.org/efro/efro#AchievementStatus
 :AchievementStatus rdf:type owl:Class ;
                    rdfs:subClassOf :Status ;
                    <http://purl.org/dc/terms/description> "The status reflecting whether a student has achieved the intended outcomes of their study program or qualification." ;
                    rdfs:label "AchievementStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ActiveParticipationStatus
+###  http://www.w3id.org/efro/efro#ActiveParticipationStatus
 :ActiveParticipationStatus rdf:type owl:Class ;
                            rdfs:subClassOf :ParticipationStatus ;
                            <http://purl.org/dc/terms/description> "Indicates that the student is actively engaging in their study program." ;
@@ -2127,7 +2127,7 @@
                            <http://www.w3.org/2004/02/skos/core#example> "Active participation demonstrated through attendance and assignment submissions​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ActiveStatus
+###  http://www.w3id.org/efro/efro#ActiveStatus
 :ActiveStatus rdf:type owl:Class ;
               rdfs:subClassOf :EnrollmentStatus ;
               owl:disjointWith :WithdrawnStatus ;
@@ -2136,13 +2136,13 @@
               <http://www.w3.org/2004/02/skos/core#example> "Students attending planned hours and meeting progression milestones." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Activity
+###  http://www.w3id.org/efro/efro#Activity
 :Activity rdf:type owl:Class ;
           <http://purl.org/dc/terms/description> "Represents any task, process, or event associated with administering, managing, or supporting educational programs and funding compliance. It serves as the parent class for specialized activities related to attendance, progression, recording, withdrawal, and enrollment."@en ;
           rdfs:label "Activity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ActualAttendanceActivity
+###  http://www.w3id.org/efro/efro#ActualAttendanceActivity
 :ActualAttendanceActivity rdf:type owl:Class ;
                           rdfs:subClassOf :AttendanceActivity ;
                           <http://purl.org/dc/terms/description> "The actual participation or presence of a student in scheduled study programs or activities." ;
@@ -2150,7 +2150,7 @@
                           <http://www.w3.org/2004/02/skos/core#example> "Weekly attendance logs submitted for ESFA compliance." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ActualAttendancePeriod
+###  http://www.w3id.org/efro/efro#ActualAttendancePeriod
 :ActualAttendancePeriod rdf:type owl:Class ;
                         rdfs:subClassOf :LearningAspect ;
                         <http://purl.org/dc/terms/description> "The period during which a student has actively participated in their study program." ;
@@ -2158,7 +2158,7 @@
                         <http://www.w3.org/2004/02/skos/core#example> "Attendance records used for funding validation​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AdjustedPlannedHours
+###  http://www.w3id.org/efro/efro#AdjustedPlannedHours
 :AdjustedPlannedHours rdf:type owl:Class ;
                       rdfs:subClassOf :PlannedHours ;
                       <http://purl.org/dc/terms/description> "Revised planned hours to reflect changes in the student’s program, such as early completion or withdrawal." ;
@@ -2166,14 +2166,14 @@
                       <http://www.w3.org/2004/02/skos/core#example> "Reduced hours due to a student completing a program early​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AdministrativeActivity
+###  http://www.w3id.org/efro/efro#AdministrativeActivity
 :AdministrativeActivity rdf:type owl:Class ;
                         rdfs:subClassOf :Activity ;
                         <http://purl.org/dc/terms/description> "Covers activities related to the management and administration of funding compliance, institutional governance, and student records.en"@en ;
                         rdfs:label "AdministrativeActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AdministrativeMeeting
+###  http://www.w3id.org/efro/efro#AdministrativeMeeting
 :AdministrativeMeeting rdf:type owl:Class ;
                        rdfs:subClassOf :GeneralAssistanceActivity ;
                        owl:disjointWith :GuidedLearning ;
@@ -2181,7 +2181,7 @@
                        rdfs:label "AdministrativeMeeting" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AdministrativeStaff
+###  http://www.w3id.org/efro/efro#AdministrativeStaff
 :AdministrativeStaff rdf:type owl:Class ;
                      rdfs:subClassOf :Staff ;
                      <http://purl.org/dc/terms/description> "Staff responsible for managing records, compliance, and administrative tasks to meet ESFA funding and reporting requirements." ;
@@ -2189,7 +2189,7 @@
                      <http://www.w3.org/2004/02/skos/core#example> "Staff members responsible for submitting ILR data and maintaining attendance records." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AfterInitialSixWeeks
+###  http://www.w3id.org/efro/efro#AfterInitialSixWeeks
 :AfterInitialSixWeeks rdf:type owl:Class ;
                       rdfs:subClassOf :TimeCondition ;
                       <http://purl.org/dc/terms/description> "A time condition indicating the period after the initial six weeks of a program. This is often used to determine funding eligibility, as students retained beyond this period qualify for funding." ;
@@ -2197,7 +2197,7 @@
                       <http://www.w3.org/2004/02/skos/core#example> "Funding claims are validated for students continuing their study program after the initial six-week period." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Apprentice
+###  http://www.w3id.org/efro/efro#Apprentice
 :Apprentice rdf:type owl:Class ;
             rdfs:subClassOf :Participant ;
             <http://purl.org/dc/terms/description> "A participant enrolled in an apprenticeship program that combines work-based training with classroom instruction, funded through apprenticeship standards." ;
@@ -2205,7 +2205,7 @@
             <http://www.w3.org/2004/02/skos/core#example> "A digital marketing apprentice completing an ESFA-funded apprenticeship​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ApprenticeshipFunding
+###  http://www.w3id.org/efro/efro#ApprenticeshipFunding
 :ApprenticeshipFunding rdf:type owl:Class ;
                        rdfs:subClassOf :FundingType ;
                        <http://purl.org/dc/terms/description> "Funding allocated for apprenticeship programs, which combine on-the-job training with classroom learning." ;
@@ -2213,7 +2213,7 @@
                        <http://www.w3.org/2004/02/skos/core#example> "Funding caps and bands specific to apprenticeship standards and frameworks." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ApprenticeshipProgramme
+###  http://www.w3id.org/efro/efro#ApprenticeshipProgramme
 :ApprenticeshipProgramme rdf:type owl:Class ;
                          rdfs:subClassOf :StudyProgramme ;
                          <http://purl.org/dc/terms/description> "A study program that combines on-the-job training with classroom learning, leading to recognized apprenticeship qualifications." ;
@@ -2221,14 +2221,14 @@
                          <http://www.w3.org/2004/02/skos/core#example> "Apprenticeships in digital marketing or construction." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ApprenticeshipProgression
+###  http://www.w3id.org/efro/efro#ApprenticeshipProgression
 :ApprenticeshipProgression rdf:type owl:Class ;
                            rdfs:subClassOf :ProgressionType ;
                            <http://purl.org/dc/terms/description> "Represents a student's transition from a study programme to an apprenticeship scheme."@en ;
                            rdfs:label "ApprenticeshipProgression" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ApprenticeshipProvider
+###  http://www.w3id.org/efro/efro#ApprenticeshipProvider
 :ApprenticeshipProvider rdf:type owl:Class ;
                         rdfs:subClassOf :EducationProvider ;
                         <http://purl.org/dc/terms/description> "A provider specializing in delivering apprenticeship programs that combine workplace training with educational components. These providers must comply with ESFA funding rules for apprenticeships." ;
@@ -2236,7 +2236,7 @@
                         <http://www.w3.org/2004/02/skos/core#example> "Apprenticeship providers must ensure that work placements and educational content meet compliance standards for funding​" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ApprenticeshipQualification
+###  http://www.w3id.org/efro/efro#ApprenticeshipQualification
 :ApprenticeshipQualification rdf:type owl:Class ;
                              rdfs:subClassOf :Qualification ;
                              <http://purl.org/dc/terms/description> "Qualifications awarded for completing apprenticeship standards or frameworks." ;
@@ -2244,14 +2244,14 @@
                              <http://www.w3.org/2004/02/skos/core#example> "Level 3 Engineering Technician Standard​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AssessmentActivity
+###  http://www.w3id.org/efro/efro#AssessmentActivity
 :AssessmentActivity rdf:type owl:Class ;
                     rdfs:subClassOf :Activity ;
                     <http://purl.org/dc/terms/description> "Covers activities related to evaluating student progress, performance, and completion of educational aims."@en ;
                     rdfs:label "AssessmentActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AssignmentActivity
+###  http://www.w3id.org/efro/efro#AssignmentActivity
 :AssignmentActivity rdf:type owl:Class ;
                     rdfs:subClassOf :AssessmentActivity ;
                     <http://purl.org/dc/terms/description> "Involves the planning, submission, and grading of assignments as part of a student’s learning or qualification aim."@en ;
@@ -2259,14 +2259,14 @@
                     <http://www.w3.org/2004/02/skos/core#example> "A marked essay that contributes to the student’s qualification​."@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AttendanceActivity
+###  http://www.w3id.org/efro/efro#AttendanceActivity
 :AttendanceActivity rdf:type owl:Class ;
                     rdfs:subClassOf :Activity ;
                     <http://purl.org/dc/terms/description> "Covers activities related to tracking, recording, and managing student attendance for compliance and funding purposes." ;
                     rdfs:label "AttendanceActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AttendanceReport
+###  http://www.w3id.org/efro/efro#AttendanceReport
 :AttendanceReport rdf:type owl:Class ;
                   rdfs:subClassOf :ReportDocument ;
                   <http://purl.org/dc/terms/description> "A document summarizing student attendance over a defined period. It serves as evidence of engagement and retention for funding purposes." ;
@@ -2274,7 +2274,7 @@
                   <http://www.w3.org/2004/02/skos/core#example> "Reports generated from class registers or attendance monitoring systems for audit purposes." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AttendanceStatus
+###  http://www.w3id.org/efro/efro#AttendanceStatus
 :AttendanceStatus rdf:type owl:Class ;
                   rdfs:subClassOf :Status ;
                   <http://purl.org/dc/terms/description> "Reflects the attendance record of a student, including periods of active participation and absences." ;
@@ -2282,7 +2282,7 @@
                   <http://www.w3.org/2004/02/skos/core#example> "Students with attendance below the threshold may not qualify for full funding." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#AuditDocument
+###  http://www.w3id.org/efro/efro#AuditDocument
 :AuditDocument rdf:type owl:Class ;
                rdfs:subClassOf :ComplianceDocument ;
                <http://purl.org/dc/terms/description> "A document produced for or during an audit to validate compliance with ESFA funding regulations. It includes records that justify funding claims, attendance, planned hours, and other institutional obligations as outlined in the guidance." ;
@@ -2290,14 +2290,14 @@
                <http://www.w3.org/2004/02/skos/core#example> "Documents demonstrating compliance with planned hours or evidence of student eligibility during audits." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Authority
+###  http://www.w3id.org/efro/efro#Authority
 :Authority rdf:type owl:Class ;
            rdfs:subClassOf :EducationalEntity ;
            <http://purl.org/dc/terms/description> "A governing or administrative entity responsible for overseeing and ensuring compliance with educational policies, funding regulations, and operational standards." ;
            rdfs:label "Authority" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#BeforeQualifyingStartPeriod
+###  http://www.w3id.org/efro/efro#BeforeQualifyingStartPeriod
 :BeforeQualifyingStartPeriod rdf:type owl:Class ;
                              rdfs:subClassOf :TimeCondition ;
                              <http://purl.org/dc/terms/description> "A time condition representing activities or periods that occur before the qualifying start period. This period does not count towards funding eligibility or compliance." ;
@@ -2305,7 +2305,7 @@
                              <http://www.w3.org/2004/02/skos/core#example> "Activities undertaken by a student before their formal enrollment or qualifying attendance period." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ClassRegister
+###  http://www.w3id.org/efro/efro#ClassRegister
 :ClassRegister rdf:type owl:Class ;
                rdfs:subClassOf :RecordDocument ;
                <http://purl.org/dc/terms/description> "A document recording student attendance for specific sessions, including details like the date, time, duration, and tutor information. This is key evidence for compliance with funding regulations." ;
@@ -2313,7 +2313,7 @@
                <http://www.w3.org/2004/02/skos/core#example> "Registers showing attendance during in-person or virtual sessions, signed by tutors or verified electronically." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#CollegeStaff
+###  http://www.w3id.org/efro/efro#CollegeStaff
 :CollegeStaff rdf:type owl:Class ;
               rdfs:subClassOf :Staff ;
               <http://purl.org/dc/terms/description> "Employees working in a college setting, including administrative, teaching, and support staff, who ensure compliance with ESFA regulations." ;
@@ -2321,7 +2321,7 @@
               <http://www.w3.org/2004/02/skos/core#example> "compliance officer ensuring adherence to planned hours and funding requirements in a college​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#CompletedEarlyStatus
+###  http://www.w3id.org/efro/efro#CompletedEarlyStatus
 :CompletedEarlyStatus rdf:type owl:Class ;
                       rdfs:subClassOf :CompletionStatus ;
                       <http://purl.org/dc/terms/description> "Status showing the student completed their study program ahead of the planned schedule." ;
@@ -2329,7 +2329,7 @@
                       <http://www.w3.org/2004/02/skos/core#example> "Early completion adjustments are applied to funding in such cases​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#CompletedSuccessfullyStatus
+###  http://www.w3id.org/efro/efro#CompletedSuccessfullyStatus
 :CompletedSuccessfullyStatus rdf:type owl:Class ;
                              rdfs:subClassOf :CompletionStatus ;
                              <http://purl.org/dc/terms/description> "Indicates the successful completion of the program, including achieving all learning aims." ;
@@ -2337,33 +2337,33 @@
                              <http://www.w3.org/2004/02/skos/core#example> "Students completing their qualifications with satisfactory attendance and assessment completion." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#CompletionActivity
+###  http://www.w3id.org/efro/efro#CompletionActivity
 :CompletionActivity rdf:type owl:Class ;
                     rdfs:subClassOf :Activity ;
                     <http://purl.org/dc/terms/description> "Activities related to the successful or partial completion of a study program or educational objective." ;
                     rdfs:label "CompletionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#CompletionStatus
+###  http://www.w3id.org/efro/efro#CompletionStatus
 :CompletionStatus rdf:type owl:Class ;
                   rdfs:subClassOf :Status ;
                   <http://purl.org/dc/terms/description> "Indicates whether a student has completed their study program as planned, early, or not at all." ;
                   rdfs:label "CompletionStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ComplianceCriterion
+###  http://www.w3id.org/efro/efro#ComplianceCriterion
 :ComplianceCriterion rdf:type owl:Class ;
                      rdfs:label "Compliance Criterion" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ComplianceDocument
+###  http://www.w3id.org/efro/efro#ComplianceDocument
 :ComplianceDocument rdf:type owl:Class ;
                     rdfs:subClassOf :Document ;
                     <http://purl.org/dc/terms/description> "A category of documents specifically focused on meeting regulatory, legal, and funding requirements. These documents ensure adherence to the ESFA guidelines and audit standards." ;
                     rdfs:label "ComplianceDocument" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ComplianceObligation
+###  http://www.w3id.org/efro/efro#ComplianceObligation
 :ComplianceObligation rdf:type owl:Class ;
                       rdfs:subClassOf :Obligation ;
                       <http://purl.org/dc/terms/description> "A requirement to adhere to funding and regulatory guidelines to ensure that funding is used appropriately and that study programs meet the required standards." ;
@@ -2371,13 +2371,13 @@
                       <http://www.w3.org/2004/02/skos/core#example> "Ensuring planned hours are accurately recorded, students meet qualifying criteria, and institutions adhere to audit requirements​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ContinueFunding
+###  http://www.w3id.org/efro/efro#ContinueFunding
 :ContinueFunding rdf:type owl:Class ;
                  rdfs:subClassOf :FundingImpact ;
                  rdfs:label "Continue Funding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ContinuingStatus
+###  http://www.w3id.org/efro/efro#ContinuingStatus
 :ContinuingStatus rdf:type owl:Class ;
                   rdfs:subClassOf :ProgressionStatus ;
                   <http://purl.org/dc/terms/description> "Indicates that the student is progressing as planned within their current study program." ;
@@ -2385,7 +2385,7 @@
                   <http://www.w3.org/2004/02/skos/core#example> "A student moving from Year 1 to Year 2 of their T Level program." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#DateOfWithdrawal
+###  http://www.w3id.org/efro/efro#DateOfWithdrawal
 :DateOfWithdrawal rdf:type owl:Class ;
                   rdfs:subClassOf :TimePoint ;
                   <http://purl.org/dc/terms/description> "The specific date on which a student withdraws from their study program. This date is critical for recalculating funding claims." ;
@@ -2393,7 +2393,7 @@
                   <http://www.w3.org/2004/02/skos/core#example> "Withdrawal forms must specify the official date of withdrawal for funding adjustments." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#DistanceLearningProvision
+###  http://www.w3id.org/efro/efro#DistanceLearningProvision
 :DistanceLearningProvision rdf:type owl:Class ;
                            rdfs:subClassOf :LearningMode ;
                            owl:disjointWith :TraditionalProvision ;
@@ -2402,7 +2402,7 @@
                            <http://www.w3.org/2004/02/skos/core#example> "Online modules for students unable to attend in person​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Document
+###  http://www.w3id.org/efro/efro#Document
 :Document rdf:type owl:Class ;
           owl:equivalentClass <http://xmlns.com/foaf/0.1/Document> ;
           rdfs:subClassOf :Evidence ;
@@ -2410,7 +2410,7 @@
           rdfs:label "Document" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#DocumentationActivity
+###  http://www.w3id.org/efro/efro#DocumentationActivity
 :DocumentationActivity rdf:type owl:Class ;
                        rdfs:subClassOf :AdministrativeActivity ;
                        <http://purl.org/dc/terms/description> "The process of creating, collecting, and maintaining records and documents to support compliance with funding, attendance, and progression requirements."@en ;
@@ -2418,7 +2418,7 @@
                        <http://www.w3.org/2004/02/skos/core#example> "Maintaining funding evidence documents for audits."@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#DoubleFundingRestriction
+###  http://www.w3id.org/efro/efro#DoubleFundingRestriction
 :DoubleFundingRestriction rdf:type owl:Class ;
                           rdfs:subClassOf :FundingCondition ;
                           <http://purl.org/dc/terms/description> "A restriction preventing institutions from claiming funding for the same student or activity from multiple sources." ;
@@ -2426,7 +2426,7 @@
                           <http://www.w3.org/2004/02/skos/core#example> "Restrictions ensuring that students enrolled in apprenticeship programs are not double-funded through other ESFA-funded programs​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ESFAFunding
+###  http://www.w3id.org/efro/efro#ESFAFunding
 :ESFAFunding rdf:type owl:Class ;
              rdfs:subClassOf :FundingType ;
              <http://purl.org/dc/terms/description> "General funding provided by the ESFA for study programs, qualifications, and institutional support." ;
@@ -2434,7 +2434,7 @@
              <http://www.w3.org/2004/02/skos/core#example> "16-19 study program funding, including high-needs student allocations​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EarlyCompletionActivity
+###  http://www.w3id.org/efro/efro#EarlyCompletionActivity
 :EarlyCompletionActivity rdf:type owl:Class ;
                          rdfs:subClassOf :CompletionActivity ;
                          <http://purl.org/dc/terms/description> "An activity involving the completion of a program or objective earlier than the planned schedule." ;
@@ -2442,7 +2442,7 @@
                          <http://www.w3.org/2004/02/skos/core#example> "Adjusting funding claims for students who complete qualifications ahead of schedule​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EarlyCompletionAdjustment
+###  http://www.w3id.org/efro/efro#EarlyCompletionAdjustment
 :EarlyCompletionAdjustment rdf:type owl:Class ;
                            rdfs:subClassOf :FundingAdjustment ;
                            <http://purl.org/dc/terms/description> "An adjustment applied when a student completes their program earlier than planned. Funding is recalculated based on the actual duration of attendance and the completion criteria." ;
@@ -2450,7 +2450,7 @@
                            <http://www.w3.org/2004/02/skos/core#example> "A reduced funding claim if a student achieves their qualification ahead of schedule without completing the planned hours​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EarlyCompletionStatus
+###  http://www.w3id.org/efro/efro#EarlyCompletionStatus
 :EarlyCompletionStatus rdf:type owl:Class ;
                        rdfs:subClassOf :AchievementStatus ;
                        <http://purl.org/dc/terms/description> "Indicates that a student has completed their qualification or study program earlier than the planned duration." ;
@@ -2458,7 +2458,7 @@
                        <http://www.w3.org/2004/02/skos/core#example> "A student completing their apprenticeship program ahead of schedule​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EducationProvider
+###  http://www.w3id.org/efro/efro#EducationProvider
 :EducationProvider rdf:type owl:Class ;
                    rdfs:subClassOf :EducationalEntity ,
                                    <http://xmlns.com/foaf/0.1/Organization> ;
@@ -2466,20 +2466,20 @@
                    rdfs:label "Education Provider" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EducationalEntity
+###  http://www.w3id.org/efro/efro#EducationalEntity
 :EducationalEntity rdf:type owl:Class ;
                    owl:equivalentClass <http://xmlns.com/foaf/0.1/Organization> ;
                    <http://purl.org/dc/terms/description> "Represents any organization, body, or institution involved in the delivery, regulation, or oversight of education, training, and funding processes." ;
                    rdfs:label "EducationalEntity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EducationalInstitution
+###  http://www.w3id.org/efro/efro#EducationalInstitution
 :EducationalInstitution rdf:type owl:Class ;
                         rdfs:subClassOf :Institution ;
                         rdfs:label "EducationalInstitution" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EducationalProvider
+###  http://www.w3id.org/efro/efro#EducationalProvider
 :EducationalProvider rdf:type owl:Class ;
                      rdfs:subClassOf :EducationProvider ;
                      <http://purl.org/dc/terms/description> "A provider delivering general education programs, including study programs for students aged 16 to 19 or those with Education, Health, and Care (EHC) plans." ;
@@ -2487,33 +2487,33 @@
                      <http://www.w3.org/2004/02/skos/core#example> "Colleges offering T Level programs or academic qualifications such as A Levels​" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EmploymentProgressionActivity
+###  http://www.w3id.org/efro/efro#EmploymentProgressionActivity
 :EmploymentProgressionActivity rdf:type owl:Class ;
                                rdfs:subClassOf :ProgressionActivity ;
                                <http://purl.org/dc/terms/description> "Activities that facilitate transitioning into employment, including work-based training." ;
                                rdfs:label "EmploymentProgressionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EnrollmentActivity
+###  http://www.w3id.org/efro/efro#EnrollmentActivity
 :EnrollmentActivity rdf:type owl:Class ;
                     rdfs:subClassOf :Activity ;
                     <http://purl.org/dc/terms/description> "Covers all activities associated with registering or enrolling students into educational programs." ;
                     rdfs:label "EnrollmentActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#EnrollmentStatus
+###  http://www.w3id.org/efro/efro#EnrollmentStatus
 :EnrollmentStatus rdf:type owl:Class ;
                   rdfs:subClassOf :Status ;
                   <http://purl.org/dc/terms/description> "Reflects the enrollment state of a student within a study program." ;
                   rdfs:label "EnrollmentStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Evidence
+###  http://www.w3id.org/efro/efro#Evidence
 :Evidence rdf:type owl:Class ;
           rdfs:label "Evidence" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ExaminationActivity
+###  http://www.w3id.org/efro/efro#ExaminationActivity
 :ExaminationActivity rdf:type owl:Class ;
                      rdfs:subClassOf :AssessmentActivity ;
                      <http://purl.org/dc/terms/description> "Activities related to administering, grading, and recording examinations.en"@en ;
@@ -2522,7 +2522,7 @@
                      <http://www.w3.org/2004/02/skos/core#example> "Formal assessments conducted for qualifications such as GCSEs or vocational qualifications."@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ExaminationDate
+###  http://www.w3id.org/efro/efro#ExaminationDate
 :ExaminationDate rdf:type owl:Class ;
                  rdfs:subClassOf :TimePoint ;
                  <http://purl.org/dc/terms/description> "The date on which a student completes a formal examination as part of their study program." ;
@@ -2530,7 +2530,7 @@
                  <http://www.w3.org/2004/02/skos/core#example> "Institutions report examination dates for students completing final assessments​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ExcludedHours
+###  http://www.w3id.org/efro/efro#ExcludedHours
 :ExcludedHours rdf:type owl:Class ;
                rdfs:subClassOf :PlannedHours ;
                <http://purl.org/dc/terms/description> "ours excluded from funding calculations, such as breaks or activities not eligible for funding." ;
@@ -2538,7 +2538,7 @@
                <http://www.w3.org/2004/02/skos/core#example> "Meal breaks or voluntary extracurricular activities​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ExitedStatus
+###  http://www.w3id.org/efro/efro#ExitedStatus
 :ExitedStatus rdf:type owl:Class ;
               rdfs:subClassOf :ProgressionStatus ;
               <http://purl.org/dc/terms/description> "Indicates that the student has exited the program before completion, potentially for personal reasons, employment, or transfer." ;
@@ -2546,7 +2546,7 @@
               <http://www.w3.org/2004/02/skos/core#example> "A student leaving to join an apprenticeship before completing their current program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FinanciallyRelatedInstitution
+###  http://www.w3id.org/efro/efro#FinanciallyRelatedInstitution
 :FinanciallyRelatedInstitution rdf:type owl:Class ;
                                rdfs:subClassOf :Institution ;
                                <http://purl.org/dc/terms/description> "An institution with financial relationships tied to funding agreements, including direct funding from the ESFA or through subcontracting arrangements." ;
@@ -2554,7 +2554,7 @@
                                <http://www.w3.org/2004/02/skos/core#example> "Colleges or academies receiving ESFA funding for study programs" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FirstDateOfAttendance
+###  http://www.w3id.org/efro/efro#FirstDateOfAttendance
 :FirstDateOfAttendance rdf:type owl:Class ;
                        rdfs:subClassOf :TimePoint ;
                        <http://purl.org/dc/terms/description> "The date when a student first attends their study program, marking the start of their qualifying attendance period." ;
@@ -2562,14 +2562,14 @@
                        <http://www.w3.org/2004/02/skos/core#example> "The first date of attendance must align with the planned program start for funding validation​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FullTimeEducationProgression
+###  http://www.w3id.org/efro/efro#FullTimeEducationProgression
 :FullTimeEducationProgression rdf:type owl:Class ;
                               rdfs:subClassOf :ProgressionType ;
                               <http://purl.org/dc/terms/description> "Represents a student's transition from one level of full-time education to another, such as moving from secondary education to further education or higher education."@en ;
                               rdfs:label "FullTimeEducationProgression" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FullTimeProgram
+###  http://www.w3id.org/efro/efro#FullTimeProgram
 :FullTimeProgram rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :StudyProgramme
                                                             [ rdf:type owl:Restriction ;
@@ -2590,7 +2590,7 @@
                  <http://www.w3.org/2004/02/skos/core#example> "A full-time A Level program for 16-19 students​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FullTimeStudent
+###  http://www.w3id.org/efro/efro#FullTimeStudent
 :FullTimeStudent rdf:type owl:Class ;
                  rdfs:subClassOf :Student ;
                  owl:disjointWith :PartTimeStudent ;
@@ -2599,7 +2599,7 @@
                  <http://www.w3.org/2004/02/skos/core#example> "A student enrolled in a full-time T Level program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundedInstitution
+###  http://www.w3id.org/efro/efro#FundedInstitution
 :FundedInstitution rdf:type owl:Class ;
                    rdfs:subClassOf :Institution ;
                    <http://purl.org/dc/terms/description> "An institution directly receiving funding from the ESFA to deliver educational programs that comply with the regulations outlined in the funding guidance." ;
@@ -2607,7 +2607,7 @@
                    <http://www.w3.org/2004/02/skos/core#example> "FE colleges and sixth forms funded to provide study programs for students aged 16 to 19" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundedStatus
+###  http://www.w3id.org/efro/efro#FundedStatus
 :FundedStatus rdf:type owl:Class ;
               rdfs:subClassOf :FundingStatus ;
               owl:disjointWith :NonFundedStatus ;
@@ -2616,7 +2616,7 @@
               <http://www.w3.org/2004/02/skos/core#example> "A 16-19-year-old student meeting all funding criteria for a full-time program." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundedStudent
+###  http://www.w3id.org/efro/efro#FundedStudent
 :FundedStudent rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :Student
                                                           [ rdf:type owl:Restriction ;
@@ -2632,14 +2632,14 @@
                <http://www.w3.org/2004/02/skos/core#example> "A 17-year-old enrolled in a vocational qualification funded through the 16-19 study program budget​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingAdjustment
+###  http://www.w3id.org/efro/efro#FundingAdjustment
 :FundingAdjustment rdf:type owl:Class ;
                    rdfs:subClassOf :FundingElement ;
                    <http://purl.org/dc/terms/description> "Adjustments applied to the allocated funding based on compliance, attendance, or completion criteria. These adjustments may result in increases or reductions in funding based on specific conditions outlined in the ESFA guidance." ;
                    rdfs:label "FundingAdjustment" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingBand
+###  http://www.w3id.org/efro/efro#FundingBand
 :FundingBand rdf:type owl:Class ;
              rdfs:subClassOf :FundingComponent ;
              <http://purl.org/dc/terms/description> "A predefined range of funding amounts based on the type and level of the qualification being delivered. Funding bands ensure consistency in funding allocations for similar programs." ;
@@ -2647,7 +2647,7 @@
              <http://www.w3.org/2004/02/skos/core#example> "Funding bands for apprenticeships, where the maximum band reflects the funding cap for that qualification." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingClaimReport
+###  http://www.w3id.org/efro/efro#FundingClaimReport
 :FundingClaimReport rdf:type owl:Class ;
                     rdfs:subClassOf :ReportDocument ;
                     <http://purl.org/dc/terms/description> "A report summarizing the funding claims made by an institution, including planned hours, attendance, and eligible activities. This report is critical for validating funding received from the ESFA." ;
@@ -2655,27 +2655,27 @@
                     <http://www.w3.org/2004/02/skos/core#example> "Reports submitted during funding returns to justify the institution’s funding allocation." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingComponent
+###  http://www.w3id.org/efro/efro#FundingComponent
 :FundingComponent rdf:type owl:Class ;
                   rdfs:subClassOf :FundingElement ;
                   <http://purl.org/dc/terms/description> "Specific elements or criteria that determine the amount of funding allocated to a program or institution. These components are used to calculate and validate funding claims." ;
                   rdfs:label "FundingComponent" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingCondition
+###  http://www.w3id.org/efro/efro#FundingCondition
 :FundingCondition rdf:type owl:Class ;
                   rdfs:subClassOf :FundingElement ;
                   <http://purl.org/dc/terms/description> "Specific conditions or rules that must be met to qualify for and retain funding. These conditions ensure institutions comply with ESFA funding regulations." ;
                   rdfs:label "FundingCondition" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingElement
+###  http://www.w3id.org/efro/efro#FundingElement
 :FundingElement rdf:type owl:Class ;
                 <http://purl.org/dc/terms/description> "Represents any concept, component, or adjustment directly associated with the allocation, distribution, or compliance of educational funding." ;
                 rdfs:label "FundingElement" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingEvidenceDocument
+###  http://www.w3id.org/efro/efro#FundingEvidenceDocument
 :FundingEvidenceDocument rdf:type owl:Class ;
                          rdfs:subClassOf :ComplianceDocument ;
                          <http://purl.org/dc/terms/description> "A document used to support funding claims by providing evidence of student eligibility, attendance, planned hours, and study program delivery." ;
@@ -2683,12 +2683,12 @@
                          <http://www.w3.org/2004/02/skos/core#example> "Learning agreements, enrollment forms, and timetables used as funding evidence during compliance audits." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingImpact
+###  http://www.w3id.org/efro/efro#FundingImpact
 :FundingImpact rdf:type owl:Class ;
                rdfs:label "Funding Impact" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingObligation
+###  http://www.w3id.org/efro/efro#FundingObligation
 :FundingObligation rdf:type owl:Class ;
                    rdfs:subClassOf :Obligation ,
                                    [ rdf:type owl:Restriction ;
@@ -2701,7 +2701,7 @@
                    <http://www.w3.org/2004/02/skos/core#example> "Obligations to demonstrate student participation, maintain evidence for planned hours, and ensure timely withdrawals for students who leave programs." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingOverlap
+###  http://www.w3id.org/efro/efro#FundingOverlap
 :FundingOverlap rdf:type owl:Class ;
                 rdfs:subClassOf :FundingCondition ;
                 <http://purl.org/dc/terms/description> "A condition addressing potential overlaps in funding claims, ensuring that institutions do not claim funding for overlapping study periods or activities." ;
@@ -2709,7 +2709,7 @@
                 <http://www.w3.org/2004/02/skos/core#example> "Overlaps in planned hours between two study programs for the same studen." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingQualifyingPeriod
+###  http://www.w3id.org/efro/efro#FundingQualifyingPeriod
 :FundingQualifyingPeriod rdf:type owl:Class ;
                          rdfs:subClassOf :FundingCondition ;
                          <http://purl.org/dc/terms/description> "A minimum period that students must participate in a study program to qualify for funding." ;
@@ -2717,7 +2717,7 @@
                          <http://www.w3.org/2004/02/skos/core#example> "Students must attend for a minimum number of days (e.g., 6 weeks) to qualify for ESFA funding." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingRate
+###  http://www.w3id.org/efro/efro#FundingRate
 :FundingRate rdf:type owl:Class ;
              rdfs:subClassOf :FundingComponent ;
              <http://purl.org/dc/terms/description> "The rate of funding allocated per qualification, student, or activity. Funding rates are determined based on qualification types, planned hours, and delivery models." ;
@@ -2725,7 +2725,7 @@
              <http://www.w3.org/2004/02/skos/core#example> "The rate per hour for study programs or specific funding rates for high-needs students​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingReduction
+###  http://www.w3id.org/efro/efro#FundingReduction
 :FundingReduction rdf:type owl:Class ;
                   rdfs:subClassOf :FundingAdjustment ;
                   <http://purl.org/dc/terms/description> "An adjustment reducing the allocated funding due to non-compliance, insufficient attendance, or failure to meet required criteria." ;
@@ -2733,12 +2733,12 @@
                   <http://www.w3.org/2004/02/skos/core#example> "A reduction applied if students do not meet the minimum threshold for planned hours or fail to qualify for funding." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingRegulations
+###  http://www.w3id.org/efro/efro#FundingRegulations
 :FundingRegulations rdf:type owl:Class ;
                     rdfs:label "Funding Regulations" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingStartCriteria
+###  http://www.w3id.org/efro/efro#FundingStartCriteria
 :FundingStartCriteria rdf:type owl:Class ;
                       rdfs:subClassOf :FundingCondition ;
                       <http://purl.org/dc/terms/description> "Criteria that must be met at the start of a program to establish eligibility for funding." ;
@@ -2746,7 +2746,7 @@
                       <http://www.w3.org/2004/02/skos/core#example> "Students must meet age, residency, and program type criteria at the beginning of their study​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingStartStatus
+###  http://www.w3id.org/efro/efro#FundingStartStatus
 :FundingStartStatus rdf:type owl:Class ;
                     rdfs:subClassOf :FundingStatus ;
                     <http://purl.org/dc/terms/description> """Defines the funding eligibility of a student at the beginning of their study programme.
@@ -2755,21 +2755,21 @@ This status also ensures that students are only funded at one institution at a t
                     rdfs:label "FundingStartStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingStatus
+###  http://www.w3id.org/efro/efro#FundingStatus
 :FundingStatus rdf:type owl:Class ;
                rdfs:subClassOf :Status ;
                <http://purl.org/dc/terms/description> "Represents the funding eligibility of a student or program based on compliance with ESFA rules." ;
                rdfs:label "FundingStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingType
+###  http://www.w3id.org/efro/efro#FundingType
 :FundingType rdf:type owl:Class ;
              rdfs:subClassOf :FundingElement ;
              <http://purl.org/dc/terms/description> "The type of funding allocated based on the program, qualification, or support being delivered. Funding types ensure alignment with ESFA rules for various educational pathways." ;
              rdfs:label "FundingType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#FundingYear
+###  http://www.w3id.org/efro/efro#FundingYear
 :FundingYear rdf:type owl:Class ;
              rdfs:subClassOf :TimePeriod ;
              <http://purl.org/dc/terms/description> "The 12-month period during which funding allocations and claims are calculated, typically aligned with the fiscal year." ;
@@ -2777,7 +2777,7 @@ This status also ensures that students are only funded at one institution at a t
              <http://www.w3.org/2004/02/skos/core#example> "ESFA funding allocations for the 2024/25 funding year​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#GeneralAdministrativeActivity
+###  http://www.w3id.org/efro/efro#GeneralAdministrativeActivity
 :GeneralAdministrativeActivity rdf:type owl:Class ;
                                rdfs:subClassOf :AdministrativeActivity ;
                                <http://purl.org/dc/terms/description> "Activities that provide overall administrative support to the institution, ensuring smooth operations and adherence to ESFA guidelines."@en ;
@@ -2785,14 +2785,14 @@ This status also ensures that students are only funded at one institution at a t
                                <http://www.w3.org/2004/02/skos/core#example> "Scheduling student sessions, maintaining compliance records, and submitting data returns​."@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#GeneralAssistanceActivity
+###  http://www.w3id.org/efro/efro#GeneralAssistanceActivity
 :GeneralAssistanceActivity rdf:type owl:Class ;
                            rdfs:subClassOf :Activity ;
                            rdfs:comment "Activities that provide general assistance or support but are not part of guided learning." ;
                            rdfs:label "GeneralAssistanceActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#GuidedLearning
+###  http://www.w3id.org/efro/efro#GuidedLearning
 :GuidedLearning rdf:type owl:Class ;
                 rdfs:subClassOf :LearningMode ;
                 <http://purl.org/dc/terms/description> "Planned learning hours under the direct supervision of a tutor or instructor." ;
@@ -2800,7 +2800,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Classroom teaching sessions and practical workshops​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#InitialASLevel
+###  http://www.w3id.org/efro/efro#InitialASLevel
 :InitialASLevel rdf:type owl:Class ;
                 rdfs:subClassOf :Qualification ;
                 <http://purl.org/dc/terms/description> "An AS Level qualification pursued at the start of a study program." ;
@@ -2808,7 +2808,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "AS Level Chemistry taken as an initial qualification during a two-year program." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#InitialPlannedHours
+###  http://www.w3id.org/efro/efro#InitialPlannedHours
 :InitialPlannedHours rdf:type owl:Class ;
                      rdfs:subClassOf :PlannedHours ;
                      <http://purl.org/dc/terms/description> "The originally planned hours recorded at the start of a study program." ;
@@ -2816,14 +2816,14 @@ This status also ensures that students are only funded at one institution at a t
                      <http://www.w3.org/2004/02/skos/core#example> "Timetabled hours based on the initial agreement between the student and institution​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Institution
+###  http://www.w3id.org/efro/efro#Institution
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :EducationalEntity ;
              <http://purl.org/dc/terms/description> "An educational organization that delivers funded programs or training to students, including schools, colleges, and academies." ;
              rdfs:label "Institution" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LastAttendanceActivity
+###  http://www.w3id.org/efro/efro#LastAttendanceActivity
 :LastAttendanceActivity rdf:type owl:Class ;
                         rdfs:subClassOf :AttendanceActivity ;
                         <http://purl.org/dc/terms/description> "The last recorded attendance activity for a student, marking their most recent engagement." ;
@@ -2831,7 +2831,7 @@ This status also ensures that students are only funded at one institution at a t
                         <http://www.w3.org/2004/02/skos/core#example> "Used for calculating funding adjustments after a withdrawal." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LastAttendanceDate
+###  http://www.w3id.org/efro/efro#LastAttendanceDate
 :LastAttendanceDate rdf:type owl:Class ;
                     rdfs:subClassOf :TimePoint ;
                     <http://purl.org/dc/terms/description> "The most recent date on which a student attended their study program. This date is used to determine withdrawal or early completion status." ;
@@ -2839,7 +2839,7 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "A student’s funding eligibility ends based on their last recorded attendance date if they withdraw." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LastExam
+###  http://www.w3id.org/efro/efro#LastExam
 :LastExam rdf:type owl:Class ;
           rdfs:subClassOf :AssessmentActivity ;
           <http://purl.org/dc/terms/description> "Represents the final or most recent exam undertaken by a student in a study program." ;
@@ -2847,7 +2847,7 @@ This status also ensures that students are only funded at one institution at a t
           <http://www.w3.org/2004/02/skos/core#example> "The last exam completed before a withdrawal or completion​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LastMarkedAssignment
+###  http://www.w3id.org/efro/efro#LastMarkedAssignment
 :LastMarkedAssignment rdf:type owl:Class ;
                       rdfs:subClassOf :AssessmentActivity ;
                       <http://purl.org/dc/terms/description> "An assignment activity that represents the most recently evaluated and graded assignment for a student." ;
@@ -2855,27 +2855,27 @@ This status also ensures that students are only funded at one institution at a t
                       <http://www.w3.org/2004/02/skos/core#example> "A student’s final marked project before program completion." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Learning
+###  http://www.w3id.org/efro/efro#Learning
 :Learning rdf:type owl:Class ;
           <http://purl.org/dc/terms/description> "Represents all aspects of educational and training activities, including the aims, aspects, modes, qualifications, and study programs. It serves as a broad category encompassing the fundamental components of the educational process." ;
           rdfs:label "Learning" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LearningAim
+###  http://www.w3id.org/efro/efro#LearningAim
 :LearningAim rdf:type owl:Class ;
              rdfs:subClassOf <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
              <http://purl.org/dc/terms/description> "Refers to the specific educational or training objectives for a student, which may include qualifications or skills development. These aims guide the structure of study programs and funding eligibility." ;
              rdfs:label "LearningAim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LearningAspect
+###  http://www.w3id.org/efro/efro#LearningAspect
 :LearningAspect rdf:type owl:Class ;
                 rdfs:subClassOf :Learning ;
                 <http://purl.org/dc/terms/description> "Represents the measurable components of a learning aim, such as attendance, planned hours, and timetabled activities, which are essential for funding and compliance." ;
                 rdfs:label "LearningAspect" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LearningMode
+###  http://www.w3id.org/efro/efro#LearningMode
 :LearningMode rdf:type owl:Class ;
               owl:equivalentClass [ rdf:type owl:Class ;
                                     owl:unionOf ( :DistanceLearningProvision
@@ -2889,7 +2889,7 @@ This status also ensures that students are only funded at one institution at a t
               rdfs:label "LearningMode" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#LocalAuthority
+###  http://www.w3id.org/efro/efro#LocalAuthority
 :LocalAuthority rdf:type owl:Class ;
                 rdfs:subClassOf :Authority ;
                 <http://purl.org/dc/terms/description> "A regional administrative body responsible for funding and regulating educational institutions, typically for maintained schools and programs within their jurisdiction." ;
@@ -2897,7 +2897,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Local authorities provide funding to schools and oversee compliance with ESFA regulations for young people’s education" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NewStart
+###  http://www.w3id.org/efro/efro#NewStart
 :NewStart rdf:type owl:Class ;
           rdfs:subClassOf :EnrollmentActivity ;
           <http://purl.org/dc/terms/description> "The enrollment of a student starting a new program or qualification aim." ;
@@ -2905,7 +2905,7 @@ This status also ensures that students are only funded at one institution at a t
           <http://www.w3.org/2004/02/skos/core#example> "A new enrollment after transferring institutions​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NonAttendanceActivity
+###  http://www.w3id.org/efro/efro#NonAttendanceActivity
 :NonAttendanceActivity rdf:type owl:Class ;
                        rdfs:subClassOf :AttendanceActivity ;
                        <http://purl.org/dc/terms/description> "Records events where students fail to attend scheduled activities and addresses their reasons for absence." ;
@@ -2913,7 +2913,7 @@ This status also ensures that students are only funded at one institution at a t
                        <http://www.w3.org/2004/02/skos/core#example> "Logs documenting student absences due to personal reasons​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NonAttendanceReason
+###  http://www.w3id.org/efro/efro#NonAttendanceReason
 :NonAttendanceReason rdf:type owl:Class ;
                      rdfs:subClassOf :WithdrawalReason ;
                      <http://purl.org/dc/terms/description> "A reason for a student’s failure to attend required sessions or activities, which may impact funding eligibility or compliance." ;
@@ -2921,7 +2921,7 @@ This status also ensures that students are only funded at one institution at a t
                      <http://www.w3.org/2004/02/skos/core#example> "Absences due to illness, family emergencies, or personal issues." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NonFundedStatus
+###  http://www.w3id.org/efro/efro#NonFundedStatus
 :NonFundedStatus rdf:type owl:Class ;
                  rdfs:subClassOf :FundingStatus ;
                  <http://purl.org/dc/terms/description> "Represents a student or program that does not qualify for ESFA funding due to ineligibility or non-compliance." ;
@@ -2929,7 +2929,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "A program exceeding the funding cap or students not meeting residency requirements." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NonQualificationAim
+###  http://www.w3id.org/efro/efro#NonQualificationAim
 :NonQualificationAim rdf:type owl:Class ;
                      rdfs:subClassOf :LearningAim ;
                      <http://purl.org/dc/terms/description> "Learning aims that do not lead directly to a formal qualification but support personal or professional development." ;
@@ -2937,7 +2937,7 @@ This status also ensures that students are only funded at one institution at a t
                      <http://www.w3.org/2004/02/skos/core#example> "Enrichment activities, work placements, or employability skills sessions that are part of the study program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#NotCompletedStatus
+###  http://www.w3id.org/efro/efro#NotCompletedStatus
 :NotCompletedStatus rdf:type owl:Class ;
                     rdfs:subClassOf :CompletionStatus ;
                     <http://purl.org/dc/terms/description> "Status indicating that the student did not complete their study program, potentially impacting funding claims." ;
@@ -2945,13 +2945,13 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "A student withdrawing midway due to personal or attendance-related issues." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Obligation
+###  http://www.w3id.org/efro/efro#Obligation
 :Obligation rdf:type owl:Class ;
             <http://purl.org/dc/terms/description> "Represents a duty or requirement placed on individuals or institutions to comply with rules, funding conditions, or reporting requirements as outlined in the ESFA guidance." ;
             rdfs:label "Obligation" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#OpenLearningProvision
+###  http://www.w3id.org/efro/efro#OpenLearningProvision
 :OpenLearningProvision rdf:type owl:Class ;
                        rdfs:subClassOf :LearningMode ;
                        <http://purl.org/dc/terms/description> "Learning delivered in an open format, allowing flexibility in attendance and participation." ;
@@ -2959,7 +2959,7 @@ This status also ensures that students are only funded at one institution at a t
                        <http://www.w3.org/2004/02/skos/core#example> "Self-paced online courses​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#PartTimeProgram
+###  http://www.w3id.org/efro/efro#PartTimeProgram
 :PartTimeProgram rdf:type owl:Class ;
                  rdfs:subClassOf :StudyProgramme ;
                  <http://purl.org/dc/terms/description> "A study program with fewer than 540 planned hours, designed for part-time learners." ;
@@ -2967,7 +2967,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "Part-time vocational qualifications delivered to adult learners​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#PartTimeStudent
+###  http://www.w3id.org/efro/efro#PartTimeStudent
 :PartTimeStudent rdf:type owl:Class ;
                  rdfs:subClassOf :Student ;
                  owl:disjointWith [ rdf:type owl:Class ;
@@ -2980,7 +2980,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "n adult learner attending evening classes for a vocational qualification." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Participant
+###  http://www.w3id.org/efro/efro#Participant
 :Participant rdf:type owl:Class ;
              rdfs:subClassOf :Person ,
                              <http://xmlns.com/foaf/0.1/Person> ;
@@ -2988,14 +2988,14 @@ This status also ensures that students are only funded at one institution at a t
              rdfs:label "Participant" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ParticipationStatus
+###  http://www.w3id.org/efro/efro#ParticipationStatus
 :ParticipationStatus rdf:type owl:Class ;
                      rdfs:subClassOf :Status ;
                      <http://purl.org/dc/terms/description> "Reflects the engagement level of a student in their study program or activities." ;
                      rdfs:label "ParticipationStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Person
+###  http://www.w3id.org/efro/efro#Person
 :Person rdf:type owl:Class ;
         owl:equivalentClass <http://xmlns.com/foaf/0.1/Person> ;
         rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
@@ -3003,7 +3003,7 @@ This status also ensures that students are only funded at one institution at a t
         rdfs:label "Person" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#PersonalReason
+###  http://www.w3id.org/efro/efro#PersonalReason
 :PersonalReason rdf:type owl:Class ;
                 rdfs:subClassOf :WithdrawalReason ;
                 <http://purl.org/dc/terms/description> "A reason related to personal circumstances, such as health, family responsibilities, or financial challenges, which may lead to non-attendance, withdrawal, or progression changes." ;
@@ -3011,7 +3011,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Withdrawal from a study program due to personal health issues​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#PlannedHours
+###  http://www.w3id.org/efro/efro#PlannedHours
 :PlannedHours rdf:type owl:Class ;
               rdfs:subClassOf :LearningAspect ;
               <http://purl.org/dc/terms/description> "The total hours planned for the delivery of a study program, including qualification and non-qualification hours." ;
@@ -3019,7 +3019,7 @@ This status also ensures that students are only funded at one institution at a t
               <http://www.w3.org/2004/02/skos/core#example> "Timetabled hours documented for ESFA funding compliance." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#PlannedHoursRecord
+###  http://www.w3id.org/efro/efro#PlannedHoursRecord
 :PlannedHoursRecord rdf:type owl:Class ;
                     rdfs:subClassOf :RecordDocument ;
                     <http://purl.org/dc/terms/description> "A document detailing the planned learning hours for a student, including both qualification and non-qualification hours. This record ensures alignment with ESFA's funding conditions and planned hours requirements." ;
@@ -3027,13 +3027,13 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "Timetables or schedules used to record and verify planned hours submitted in data return" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgrammeAim
+###  http://www.w3id.org/efro/efro#ProgrammeAim
 :ProgrammeAim rdf:type owl:Class ;
               rdfs:subClassOf :LearningAim ;
               rdfs:label "Programme Aim" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgrammeCompletionActivity
+###  http://www.w3id.org/efro/efro#ProgrammeCompletionActivity
 :ProgrammeCompletionActivity rdf:type owl:Class ;
                              rdfs:subClassOf :CompletionActivity ;
                              <http://purl.org/dc/terms/description> "Activities marking the official completion of a study program or learning aim." ;
@@ -3041,7 +3041,7 @@ This status also ensures that students are only funded at one institution at a t
                              <http://www.w3.org/2004/02/skos/core#example> "Finalizing the records for students who meet all qualification criteria​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgrammeStart
+###  http://www.w3id.org/efro/efro#ProgrammeStart
 :ProgrammeStart rdf:type owl:Class ;
                 rdfs:subClassOf :EnrollmentActivity ;
                 <http://purl.org/dc/terms/description> "The activity marking the initiation of a specific study program for a student." ;
@@ -3049,7 +3049,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Official start dates recorded for funding compliance." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgrammeStartDate
+###  http://www.w3id.org/efro/efro#ProgrammeStartDate
 :ProgrammeStartDate rdf:type owl:Class ;
                     rdfs:subClassOf :TimePoint ;
                     <http://purl.org/dc/terms/description> "The official start date of a study program, marking the beginning of planned hours and eligibility for funding." ;
@@ -3057,7 +3057,7 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "Program start dates must match the information provided in ILR returns to avoid discrepancies during audits​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgressReport
+###  http://www.w3id.org/efro/efro#ProgressReport
 :ProgressReport rdf:type owl:Class ;
                 rdfs:subClassOf :ReportDocument ;
                 <http://purl.org/dc/terms/description> "A document detailing a student’s academic progress, attendance, and completion status for specific study programs. These reports may be used for funding audits, compliance checks, or student support." ;
@@ -3065,14 +3065,14 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Reports showing students’ achievement in meeting their learning aims and progression to higher-level study or employment." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgressionActivity
+###  http://www.w3id.org/efro/efro#ProgressionActivity
 :ProgressionActivity rdf:type owl:Class ;
                      rdfs:subClassOf :AssessmentActivity ;
                      <http://purl.org/dc/terms/description> "Activities aimed at tracking or enabling a student’s academic or professional progression." ;
                      rdfs:label "ProgressionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgressionReason
+###  http://www.w3id.org/efro/efro#ProgressionReason
 :ProgressionReason rdf:type owl:Class ;
                    rdfs:subClassOf :WithdrawalReason ;
                    <http://purl.org/dc/terms/description> "A reason explaining a student's progression within or beyond their current study program." ;
@@ -3080,28 +3080,28 @@ This status also ensures that students are only funded at one institution at a t
                    <http://www.w3.org/2004/02/skos/core#example> "Progression to a higher qualification, an apprenticeship, or sustainable employment​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgressionStatus
+###  http://www.w3id.org/efro/efro#ProgressionStatus
 :ProgressionStatus rdf:type owl:Class ;
                    rdfs:subClassOf :Status ;
                    <http://purl.org/dc/terms/description> "Reflects the progression state of a student within or beyond their current study program." ;
                    rdfs:label "ProgressionStatus" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ProgressionType
+###  http://www.w3id.org/efro/efro#ProgressionType
 :ProgressionType rdf:type owl:Class ;
                  rdfs:subClassOf :ProgressionActivity ;
                  <http://purl.org/dc/terms/description> "Categorizes different types of educational and career progression pathways for students."@en ;
                  rdfs:label "ProgressionType" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Qualification
+###  http://www.w3id.org/efro/efro#Qualification
 :Qualification rdf:type owl:Class ;
                rdfs:subClassOf <http://purl.org/vocab/aiiso/schema#KnowledgeGrouping> ;
                <http://purl.org/dc/terms/description> "Refers to formal certifications awarded upon completion of a recognized learning aim." ;
                rdfs:label "Qualification" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#QualificationAim
+###  http://www.w3id.org/efro/efro#QualificationAim
 :QualificationAim rdf:type owl:Class ;
                   rdfs:subClassOf :LearningAim ;
                   <http://purl.org/dc/terms/description> "Learning aims that lead to a recognized qualification, such as academic or vocational certifications." ;
@@ -3109,7 +3109,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "A Level, vocational qualifications, or apprenticeship standards included in the ESFA’s list of eligible qualifications." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#QualifyingAttendanceActivity
+###  http://www.w3id.org/efro/efro#QualifyingAttendanceActivity
 :QualifyingAttendanceActivity rdf:type owl:Class ;
                               rdfs:subClassOf :AttendanceActivity ;
                               <http://purl.org/dc/terms/description> "Attendance activities that meet the criteria for funding eligibility and compliance, such as qualifying hours or required participation levels." ;
@@ -3117,7 +3117,7 @@ This status also ensures that students are only funded at one institution at a t
                               <http://www.w3.org/2004/02/skos/core#example> "A student must attend six weeks of sessions to qualify for funding." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#QualifyingPeriod
+###  http://www.w3id.org/efro/efro#QualifyingPeriod
 :QualifyingPeriod rdf:type owl:Class ;
                   rdfs:subClassOf :TimePeriod ;
                   <http://purl.org/dc/terms/description> "A minimum duration a student must attend to qualify for funding. Often, this refers to the six-week attendance rule." ;
@@ -3125,7 +3125,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "A student must attend their program for at least six weeks to qualify for funding eligibility​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#QualityAssuranceRecord
+###  http://www.w3id.org/efro/efro#QualityAssuranceRecord
 :QualityAssuranceRecord rdf:type owl:Class ;
                         rdfs:subClassOf :ComplianceDocument ;
                         <http://purl.org/dc/terms/description> "Records that provide evidence of adherence to quality standards in delivering study programs, attendance monitoring, and institutional processes. These documents demonstrate efforts to meet educational objectives and maintain service quality." ;
@@ -3133,26 +3133,26 @@ This status also ensures that students are only funded at one institution at a t
                         <http://www.w3.org/2004/02/skos/core#example> "Records ensuring accurate data in ILR returns or evidence of robust attendance tracking systems." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ReEnrollmentActivity
+###  http://www.w3id.org/efro/efro#ReEnrollmentActivity
 :ReEnrollmentActivity rdf:type owl:Class ;
                       rdfs:subClassOf :EnrollmentActivity ;
                       rdfs:label "ReEnrollment Activity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Reason
+###  http://www.w3id.org/efro/efro#Reason
 :Reason rdf:type owl:Class ;
         <http://purl.org/dc/terms/description> "Represents the justification or cause for an action, event, or decision related to education and training, such as withdrawal, non-attendance, or progression." ;
         rdfs:label "Reason" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RecordDocument
+###  http://www.w3id.org/efro/efro#RecordDocument
 :RecordDocument rdf:type owl:Class ;
                 rdfs:subClassOf :Document ;
                 <http://purl.org/dc/terms/description> "A category of documents used to log and maintain detailed information for compliance, attendance, and funding-related activities." ;
                 rdfs:label "RecordDocument" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RecordFundingValue
+###  http://www.w3id.org/efro/efro#RecordFundingValue
 :RecordFundingValue rdf:type owl:Class ;
                     rdfs:subClassOf :RecordingActivity ;
                     <http://purl.org/dc/terms/description> "An activity that involves documenting the funding value associated with a specific student or program." ;
@@ -3160,7 +3160,7 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "Recording the funding rate in relation to planned hours." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RecordedPlannedHours
+###  http://www.w3id.org/efro/efro#RecordedPlannedHours
 :RecordedPlannedHours rdf:type owl:Class ;
                       rdfs:subClassOf :PlannedHours ;
                       <http://purl.org/dc/terms/description> "The official record of planned hours submitted in funding claims or ILR returns." ;
@@ -3168,14 +3168,14 @@ This status also ensures that students are only funded at one institution at a t
                       <http://www.w3.org/2004/02/skos/core#example> "Hours documented for audit purposes​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RecordingActivity
+###  http://www.w3id.org/efro/efro#RecordingActivity
 :RecordingActivity rdf:type owl:Class ;
                    rdfs:subClassOf :Activity ;
                    <http://purl.org/dc/terms/description> "Covers the documentation and recording of data required for compliance, attendance, and funding purposes." ;
                    rdfs:label "RecordingActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RecordingPlannedHours
+###  http://www.w3id.org/efro/efro#RecordingPlannedHours
 :RecordingPlannedHours rdf:type owl:Class ;
                        rdfs:subClassOf :RecordingActivity ;
                        <http://purl.org/dc/terms/description> "The activity of recording the planned study or attendance hours for a program, as required for compliance." ;
@@ -3183,7 +3183,7 @@ This status also ensures that students are only funded at one institution at a t
                        <http://www.w3.org/2004/02/skos/core#example> "Timetables recorded at the start of the academic year" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RegulatoryBody
+###  http://www.w3id.org/efro/efro#RegulatoryBody
 :RegulatoryBody rdf:type owl:Class ;
                 rdfs:subClassOf :Authority ;
                 <http://purl.org/dc/terms/description> "A body responsible for creating, implementing, and monitoring compliance with regulations related to education and funding." ;
@@ -3191,7 +3191,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "The ESFA, which enforces funding rules and monitors compliance through audits and guidelines, is a regulatory body​" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ReplacementActivity
+###  http://www.w3id.org/efro/efro#ReplacementActivity
 :ReplacementActivity rdf:type owl:Class ;
                      rdfs:subClassOf :LearningAim ;
                      <http://purl.org/dc/terms/description> "Activities undertaken to replace a withdrawn or discontinued learning aim." ;
@@ -3199,7 +3199,7 @@ This status also ensures that students are only funded at one institution at a t
                      <http://www.w3.org/2004/02/skos/core#example> "A student switches to a similar qualification after withdrawing from their original learning aim​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ReportDocument
+###  http://www.w3id.org/efro/efro#ReportDocument
 :ReportDocument rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.org/cerif/frapo/Output> ,
                                 :Document ;
@@ -3207,7 +3207,7 @@ This status also ensures that students are only funded at one institution at a t
                 rdfs:label "ReportDocument" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#ReportingObligation
+###  http://www.w3id.org/efro/efro#ReportingObligation
 :ReportingObligation rdf:type owl:Class ;
                      rdfs:subClassOf :Obligation ;
                      <http://purl.org/dc/terms/description> "A requirement to submit accurate and timely data to the ESFA, including Individualized Learner Records (ILR) and evidence of compliance." ;
@@ -3215,7 +3215,7 @@ This status also ensures that students are only funded at one institution at a t
                      <http://www.w3.org/2004/02/skos/core#example> "Submission of ILR data to report attendance, withdrawals, and funding claims for audit purposes​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RetainedForFundingStatus
+###  http://www.w3id.org/efro/efro#RetainedForFundingStatus
 :RetainedForFundingStatus rdf:type owl:Class ;
                           rdfs:subClassOf :FundingStatus ;
                           <http://purl.org/dc/terms/description> "Indicates that the student’s funding status is retained due to their compliance with attendance and program criteria." ;
@@ -3223,7 +3223,7 @@ This status also ensures that students are only funded at one institution at a t
                           <http://www.w3.org/2004/02/skos/core#example> "Retention factors applied for students completing their planned hours." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RetainedStatus
+###  http://www.w3id.org/efro/efro#RetainedStatus
 :RetainedStatus rdf:type owl:Class ;
                 rdfs:subClassOf :ParticipationStatus ;
                 <http://purl.org/dc/terms/description> "Represents that the student remains retained within the study program and meets retention criteria for funding." ;
@@ -3231,7 +3231,7 @@ This status also ensures that students are only funded at one institution at a t
                 <http://www.w3.org/2004/02/skos/core#example> "Students continuing to the next term after meeting engagement thresholds​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#RetentionFactor
+###  http://www.w3id.org/efro/efro#RetentionFactor
 :RetentionFactor rdf:type owl:Class ;
                  rdfs:subClassOf :FundingComponent ;
                  <http://purl.org/dc/terms/description> "A multiplier applied to funding calculations to account for student retention. Institutions are incentivized to retain students until the completion of their study programs." ;
@@ -3239,7 +3239,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "Retention factors are used to adjust funding based on whether students complete the full planned program." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SameInstitution
+###  http://www.w3id.org/efro/efro#SameInstitution
 :SameInstitution rdf:type owl:Class ;
                  rdfs:subClassOf :Institution ;
                  <http://purl.org/dc/terms/description> "Refers to the scenario where a student remains enrolled in the same educational institution for the entire duration of their program." ;
@@ -3247,7 +3247,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "Continuity of a student’s enrollment in a single institution ensures alignment with funding guidelines without duplication​" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SixWeekPeriod
+###  http://www.w3id.org/efro/efro#SixWeekPeriod
 :SixWeekPeriod rdf:type owl:Class ;
                rdfs:subClassOf :TimePeriod ;
                <http://purl.org/dc/terms/description> "A specific six-week duration used to measure qualifying attendance or compliance with funding rules." ;
@@ -3255,7 +3255,7 @@ This status also ensures that students are only funded at one institution at a t
                <http://www.w3.org/2004/02/skos/core#example> "Institutions must confirm attendance records for students retained during the first six weeks of their program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SixWeeksEarlyCompletion
+###  http://www.w3id.org/efro/efro#SixWeeksEarlyCompletion
 :SixWeeksEarlyCompletion rdf:type owl:Class ;
                          rdfs:subClassOf :TimeCondition ;
                          <http://purl.org/dc/terms/description> "Indicates early completion of a program within six weeks of the planned end date. Funding adjustments may apply in such cases." ;
@@ -3263,14 +3263,14 @@ This status also ensures that students are only funded at one institution at a t
                          <http://www.w3.org/2004/02/skos/core#example> "A student completing all their assessments six weeks before the scheduled end date of their program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SkillsProgressionActivity
+###  http://www.w3id.org/efro/efro#SkillsProgressionActivity
 :SkillsProgressionActivity rdf:type owl:Class ;
                            rdfs:subClassOf :ProgressionActivity ;
                            <http://purl.org/dc/terms/description> "Activities aimed at developing specific skills to improve employability or academic readiness." ;
                            rdfs:label "SkillsProgressionActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Staff
+###  http://www.w3id.org/efro/efro#Staff
 :Staff rdf:type owl:Class ;
        rdfs:subClassOf :Person ,
                        <http://xmlns.com/foaf/0.1/Person> ;
@@ -3278,7 +3278,7 @@ This status also ensures that students are only funded at one institution at a t
        rdfs:label "Staff" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Status
+###  http://www.w3id.org/efro/efro#Status
 :Status rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                               owl:unionOf ( :CompletionStatus
@@ -3291,13 +3291,13 @@ This status also ensures that students are only funded at one institution at a t
         rdfs:label "Status" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#StopFunding
+###  http://www.w3id.org/efro/efro#StopFunding
 :StopFunding rdf:type owl:Class ;
              rdfs:subClassOf :FundingImpact ;
              rdfs:label "Stop Funding" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Student
+###  http://www.w3id.org/efro/efro#Student
 :Student rdf:type owl:Class ;
          owl:equivalentClass [ rdf:type owl:Class ;
                                owl:unionOf ( :FullTimeStudent
@@ -3311,7 +3311,7 @@ This status also ensures that students are only funded at one institution at a t
          rdfs:label "Student" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#StudentAttendance
+###  http://www.w3id.org/efro/efro#StudentAttendance
 :StudentAttendance rdf:type owl:Class ;
                    rdfs:subClassOf :AttendanceActivity ;
                    <http://purl.org/dc/terms/description> "An overarching activity encompassing the tracking and management of all attendance-related actions for students." ;
@@ -3319,14 +3319,14 @@ This status also ensures that students are only funded at one institution at a t
                    <http://www.w3.org/2004/02/skos/core#example> "Comprehensive attendance tracking for ILR submissions." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#StudyProgramme
+###  http://www.w3id.org/efro/efro#StudyProgramme
 :StudyProgramme rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.org/vocab/aiiso/schema#Programme> ;
                 <http://purl.org/dc/terms/description> "A structured educational program combining qualification and non-qualification aims, designed to meet the needs of students and prepare them for progression to further education, training, or employment." ;
                 rdfs:label "StudyProgramme" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionActivity
+###  http://www.w3id.org/efro/efro#SuccessfulCompletionActivity
 :SuccessfulCompletionActivity rdf:type owl:Class ;
                               rdfs:subClassOf :CompletionActivity ;
                               <http://purl.org/dc/terms/description> "Activities indicating that a student has fully met all requirements of a program or qualification aim." ;
@@ -3334,7 +3334,7 @@ This status also ensures that students are only funded at one institution at a t
                               <http://www.w3.org/2004/02/skos/core#example> "A completed qualification aim logged in the ILR." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SuccessfulCompletionStatus
+###  http://www.w3id.org/efro/efro#SuccessfulCompletionStatus
 :SuccessfulCompletionStatus rdf:type owl:Class ;
                             rdfs:subClassOf :AchievementStatus ;
                             <http://purl.org/dc/terms/description> "Represents the successful fulfillment of all learning aims, including qualification and non-qualification components." ;
@@ -3342,7 +3342,7 @@ This status also ensures that students are only funded at one institution at a t
                             <http://www.w3.org/2004/02/skos/core#example> "Achieving an A Level qualification with full attendance and assessments completed successfully." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SuccessfulProgression
+###  http://www.w3id.org/efro/efro#SuccessfulProgression
 :SuccessfulProgression rdf:type owl:Class ;
                        rdfs:subClassOf :ProgressionStatus ;
                        <http://purl.org/dc/terms/description> "Indicates that the student has successfully progressed to a higher-level qualification, apprenticeship, or employment." ;
@@ -3350,7 +3350,7 @@ This status also ensures that students are only funded at one institution at a t
                        <http://www.w3.org/2004/02/skos/core#example> "A student completing their study program and enrolling in a Level 3 apprenticeship​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SummerTerm
+###  http://www.w3id.org/efro/efro#SummerTerm
 :SummerTerm rdf:type owl:Class ;
             rdfs:subClassOf :TimePeriod ;
             <http://purl.org/dc/terms/description> "The term occurring during the summer months, which may include additional or supplemental learning activities." ;
@@ -3358,7 +3358,7 @@ This status also ensures that students are only funded at one institution at a t
             <http://www.w3.org/2004/02/skos/core#example> "Summer term activities, such as exam preparation or catch-up sessions, may be included in planned hours." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SupportActivity
+###  http://www.w3id.org/efro/efro#SupportActivity
 :SupportActivity rdf:type owl:Class ;
                  rdfs:subClassOf :AdministrativeActivity ;
                  <http://purl.org/dc/terms/description> "Activities designed to provide operational or administrative support for students, staff, and institutional processes."@en ;
@@ -3366,14 +3366,14 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "Assistance in managing compliance documentation or helping students address attendance-related issues."@en .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SustainableEmploymentProgression
+###  http://www.w3id.org/efro/efro#SustainableEmploymentProgression
 :SustainableEmploymentProgression rdf:type owl:Class ;
                                   rdfs:subClassOf :ProgressionType ;
                                   <http://purl.org/dc/terms/description> "Represents a student's transition from education to long-term employment."@en ;
                                   rdfs:label "SustainableEmploymentProgression" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#SustainableEmploymentStatus
+###  http://www.w3id.org/efro/efro#SustainableEmploymentStatus
 :SustainableEmploymentStatus rdf:type owl:Class ;
                              rdfs:subClassOf :AchievementStatus ;
                              <http://purl.org/dc/terms/description> "Indicates that a student has progressed into sustained employment upon completing their study program." ;
@@ -3381,7 +3381,7 @@ This status also ensures that students are only funded at one institution at a t
                              <http://www.w3.org/2004/02/skos/core#example> "A graduate securing full-time employment after completing a traineeship program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TeachingStaff
+###  http://www.w3id.org/efro/efro#TeachingStaff
 :TeachingStaff rdf:type owl:Class ;
                rdfs:subClassOf :Staff ;
                <http://purl.org/dc/terms/description> "Staff directly responsible for delivering educational content and supporting students in achieving their learning aims." ;
@@ -3389,7 +3389,7 @@ This status also ensures that students are only funded at one institution at a t
                <http://www.w3.org/2004/02/skos/core#example> "A tutor delivering guided learning sessions for A Level students." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TelephoneContact
+###  http://www.w3id.org/efro/efro#TelephoneContact
 :TelephoneContact rdf:type owl:Class ;
                   rdfs:subClassOf :GeneralAssistanceActivity ;
                   <http://purl.org/dc/terms/description> "Activities involving contacting students or guardians via phone to confirm attendance or address absences." ;
@@ -3397,34 +3397,34 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "Follow-ups for non-attendance compliance." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TimeCondition
+###  http://www.w3id.org/efro/efro#TimeCondition
 :TimeCondition rdf:type owl:Class ;
                rdfs:subClassOf :TimeRelated ;
                <http://purl.org/dc/terms/description> "Defines time-related rules or criteria that must be met to maintain funding compliance or eligibility." ;
                rdfs:label "TimeCondition" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TimePeriod
+###  http://www.w3id.org/efro/efro#TimePeriod
 :TimePeriod rdf:type owl:Class ;
             rdfs:subClassOf :TimeRelated ;
             <http://purl.org/dc/terms/description> "Represents a defined duration associated with educational or funding activities, compliance, or tracking." ;
             rdfs:label "TimePeriod" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TimePoint
+###  http://www.w3id.org/efro/efro#TimePoint
 :TimePoint rdf:type owl:Class ;
            rdfs:subClassOf :TimeRelated ;
            <http://purl.org/dc/terms/description> "Represents specific moments or dates within an academic or funding year that are critical for compliance, reporting, or funding calculations." ;
            rdfs:label "TimePoint" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TimeRelated
+###  http://www.w3id.org/efro/efro#TimeRelated
 :TimeRelated rdf:type owl:Class ;
              <http://purl.org/dc/terms/description> "Represents concepts related to time in the context of funding compliance, attendance tracking, and program delivery. This includes time-based conditions, periods, and specific points relevant to funding and student progress." ;
              rdfs:label "TimeRelated" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TimetabledHours
+###  http://www.w3id.org/efro/efro#TimetabledHours
 :TimetabledHours rdf:type owl:Class ;
                  rdfs:subClassOf :LearningAspect ;
                  <http://purl.org/dc/terms/description> "Hours scheduled for the delivery of learning activities, including both qualification and non-qualification aims." ;
@@ -3432,7 +3432,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "Weekly timetables showing planned sessions for students​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TotalHoursForYear
+###  http://www.w3id.org/efro/efro#TotalHoursForYear
 :TotalHoursForYear rdf:type owl:Class ;
                    rdfs:subClassOf :LearningAspect ;
                    <http://purl.org/dc/terms/description> "The sum of all planned hours for a student’s study program over an academic year." ;
@@ -3440,7 +3440,7 @@ This status also ensures that students are only funded at one institution at a t
                    <http://www.w3.org/2004/02/skos/core#example> "540 planned hours for full-time 16-19 study programs." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TraditionalProvision
+###  http://www.w3id.org/efro/efro#TraditionalProvision
 :TraditionalProvision rdf:type owl:Class ;
                       rdfs:subClassOf :LearningMode ;
                       <http://purl.org/dc/terms/description> "Learning delivered through traditional in-person teaching methods." ;
@@ -3448,7 +3448,7 @@ This status also ensures that students are only funded at one institution at a t
                       <http://www.w3.org/2004/02/skos/core#example> "Lectures and classroom-based teaching." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Trainee
+###  http://www.w3id.org/efro/efro#Trainee
 :Trainee rdf:type owl:Class ;
          rdfs:subClassOf :Participant ;
          <http://purl.org/dc/terms/description> "A participant enrolled in a traineeship program designed to develop employability skills and prepare them for employment or an apprenticeship." ;
@@ -3456,7 +3456,7 @@ This status also ensures that students are only funded at one institution at a t
          <http://www.w3.org/2004/02/skos/core#example> "A young person in a 6-month traineeship program with work placement and training components​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#Traineeship
+###  http://www.w3id.org/efro/efro#Traineeship
 :Traineeship rdf:type owl:Class ;
              rdfs:subClassOf :StudyProgramme ;
              <http://purl.org/dc/terms/description> "A study program designed to prepare students for employment or further education, combining work placements with skills training." ;
@@ -3464,7 +3464,7 @@ This status also ensures that students are only funded at one institution at a t
              <http://www.w3.org/2004/02/skos/core#example> "A 6-month traineeship for students aged 16-24 focusing on employability skills​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TraineeshipFunding
+###  http://www.w3id.org/efro/efro#TraineeshipFunding
 :TraineeshipFunding rdf:type owl:Class ;
                     rdfs:subClassOf :FundingType ;
                     <http://purl.org/dc/terms/description> "Funding specifically allocated for traineeships, which focus on preparing students for employment or apprenticeships by developing skills and providing work experience." ;
@@ -3472,7 +3472,7 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "Traineeship funding based on planned hours and eligible activities​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TrainingProvider
+###  http://www.w3id.org/efro/efro#TrainingProvider
 :TrainingProvider rdf:type owl:Class ;
                   rdfs:subClassOf :EducationProvider ;
                   <http://purl.org/dc/terms/description> "An organization delivering vocational training, skills development, or workforce preparation programs. Training providers may receive ESFA funding for delivering specific qualifications or employability skills." ;
@@ -3480,7 +3480,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "Training providers offering technical qualifications approved on the ESFA list of funded qualifications." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TransferActivity
+###  http://www.w3id.org/efro/efro#TransferActivity
 :TransferActivity rdf:type owl:Class ;
                   rdfs:subClassOf :EnrollmentActivity ;
                   <http://purl.org/dc/terms/description> "An enrollment activity involving the transfer of a student from one study program or institution to another." ;
@@ -3488,7 +3488,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "Updating ILR records when a student switches courses​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TransferredStatus
+###  http://www.w3id.org/efro/efro#TransferredStatus
 :TransferredStatus rdf:type owl:Class ;
                    rdfs:subClassOf :EnrollmentStatus ;
                    <http://purl.org/dc/terms/description> "Indicates that a student has transferred to another study program or institution." ;
@@ -3496,7 +3496,7 @@ This status also ensures that students are only funded at one institution at a t
                    <http://www.w3.org/2004/02/skos/core#example> "A student transferring from one provider to another during the program​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#TwoWeeksEarlyCompletion
+###  http://www.w3id.org/efro/efro#TwoWeeksEarlyCompletion
 :TwoWeeksEarlyCompletion rdf:type owl:Class ;
                          rdfs:subClassOf :TimeCondition ;
                          <http://purl.org/dc/terms/description> "Refers to a program completed two weeks earlier than planned. While less common than six-week adjustments, funding may still need recalibration." ;
@@ -3504,7 +3504,7 @@ This status also ensures that students are only funded at one institution at a t
                          <http://www.w3.org/2004/02/skos/core#example> "A student achieving their qualification two weeks ahead of the planned completion date​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#UpdatePlannedHours
+###  http://www.w3id.org/efro/efro#UpdatePlannedHours
 :UpdatePlannedHours rdf:type owl:Class ;
                     rdfs:subClassOf :RecordingActivity ;
                     <http://purl.org/dc/terms/description> "An activity involving updates to the recorded planned hours, reflecting changes in the program structure or student participation." ;
@@ -3512,7 +3512,7 @@ This status also ensures that students are only funded at one institution at a t
                     <http://www.w3.org/2004/02/skos/core#example> "Updating planned hours after a reduction in a student’s timetable​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#VocationalQualification
+###  http://www.w3id.org/efro/efro#VocationalQualification
 :VocationalQualification rdf:type owl:Class ;
                          rdfs:subClassOf :Qualification ;
                          <http://purl.org/dc/terms/description> "Qualifications focused on practical skills and workplace readiness." ;
@@ -3520,14 +3520,14 @@ This status also ensures that students are only funded at one institution at a t
                          <http://www.w3.org/2004/02/skos/core#example> "BTEC or NVQ qualifications included in ESFA funding eligibility​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#VocationalTrainingProgression
+###  http://www.w3id.org/efro/efro#VocationalTrainingProgression
 :VocationalTrainingProgression rdf:type owl:Class ;
                                rdfs:subClassOf :ProgressionType ;
                                <http://purl.org/dc/terms/description> "Covers transitions into alternative training programmes, such as skill-based certifications, employer-sponsored training, or workforce development initiatives."@en ;
                                rdfs:label "VocationalTrainingProgression" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WholeYear
+###  http://www.w3id.org/efro/efro#WholeYear
 :WholeYear rdf:type owl:Class ;
            rdfs:subClassOf :TimePeriod ;
            <http://purl.org/dc/terms/description> "Represents the entire academic or funding year as a single time period." ;
@@ -3535,14 +3535,14 @@ This status also ensures that students are only funded at one institution at a t
            <http://www.w3.org/2004/02/skos/core#example> "Institutions must report total planned hours and attendance for the whole year in ILR submissions​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalActivity
+###  http://www.w3id.org/efro/efro#WithdrawalActivity
 :WithdrawalActivity rdf:type owl:Class ;
                     rdfs:subClassOf :Activity ;
                     <http://purl.org/dc/terms/description> "Activities associated with the process of withdrawing a student from a program or institution." ;
                     rdfs:label "WithdrawalActivity" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalAdjustment
+###  http://www.w3id.org/efro/efro#WithdrawalAdjustment
 :WithdrawalAdjustment rdf:type owl:Class ;
                       rdfs:subClassOf :FundingAdjustment ;
                       <http://purl.org/dc/terms/description> "An adjustment made when a student withdraws from their program. Funding is recalculated based on the student's attendance and engagement prior to withdrawal." ;
@@ -3550,7 +3550,7 @@ This status also ensures that students are only funded at one institution at a t
                       <http://www.w3.org/2004/02/skos/core#example> "Partial funding claims made for students who withdraw early, based on the eligible learning complete." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalDateActivity
+###  http://www.w3id.org/efro/efro#WithdrawalDateActivity
 :WithdrawalDateActivity rdf:type owl:Class ;
                         rdfs:subClassOf :WithdrawalActivity ;
                         <http://purl.org/dc/terms/description> "Recording the specific date of a student’s withdrawal from a program or institution." ;
@@ -3558,7 +3558,7 @@ This status also ensures that students are only funded at one institution at a t
                         <http://www.w3.org/2004/02/skos/core#example> "Used to calculate funding adjustments." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalFromLearningAim
+###  http://www.w3id.org/efro/efro#WithdrawalFromLearningAim
 :WithdrawalFromLearningAim rdf:type owl:Class ;
                            rdfs:subClassOf :WithdrawalActivity ;
                            <http://purl.org/dc/terms/description> "An activity where a student withdraws from a specific learning aim or course within a study program." ;
@@ -3566,7 +3566,7 @@ This status also ensures that students are only funded at one institution at a t
                            <http://www.w3.org/2004/02/skos/core#example> "A student exits a single course while continuing other studies​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalFromStudyProgramme
+###  http://www.w3id.org/efro/efro#WithdrawalFromStudyProgramme
 :WithdrawalFromStudyProgramme rdf:type owl:Class ;
                               rdfs:subClassOf :WithdrawalActivity ;
                               <http://purl.org/dc/terms/description> "An activity involving the withdrawal of a student from an entire study program." ;
@@ -3574,7 +3574,7 @@ This status also ensures that students are only funded at one institution at a t
                               <http://www.w3.org/2004/02/skos/core#example> "Transitioning from a study program to a different one within the same institution​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalFromWholeProgramme
+###  http://www.w3id.org/efro/efro#WithdrawalFromWholeProgramme
 :WithdrawalFromWholeProgramme rdf:type owl:Class ;
                               rdfs:subClassOf :WithdrawalActivity ;
                               <http://purl.org/dc/terms/description> "An activity marking the withdrawal of a student from all programs and courses at the institution." ;
@@ -3582,7 +3582,7 @@ This status also ensures that students are only funded at one institution at a t
                               <http://www.w3.org/2004/02/skos/core#example> "A complete exit from education recorded in the ILR​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalProcess
+###  http://www.w3id.org/efro/efro#WithdrawalProcess
 :WithdrawalProcess rdf:type owl:Class ;
                    rdfs:subClassOf :WithdrawalActivity ;
                    <http://purl.org/dc/terms/description> "The administrative and procedural activities involved in managing and recording a student's withdrawal." ;
@@ -3590,7 +3590,7 @@ This status also ensures that students are only funded at one institution at a t
                    <http://www.w3.org/2004/02/skos/core#example> "Completing and submitting withdrawal forms as evidence for audits." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalReason
+###  http://www.w3id.org/efro/efro#WithdrawalReason
 :WithdrawalReason rdf:type owl:Class ;
                   owl:equivalentClass [ rdf:type owl:Class ;
                                         owl:unionOf ( :NonAttendanceReason
@@ -3604,7 +3604,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "Withdrawal due to employment opportunities, health issues, or transferring to another institution." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawalRecord
+###  http://www.w3id.org/efro/efro#WithdrawalRecord
 :WithdrawalRecord rdf:type owl:Class ;
                   rdfs:subClassOf :RecordDocument ;
                   <http://purl.org/dc/terms/description> "A document recording the details of a student's withdrawal from a study program, including the date, reason, and evidence of proper process adherence." ;
@@ -3612,7 +3612,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "Withdrawal forms or records submitted as part of the ILR or school census data returns." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawnQualification
+###  http://www.w3id.org/efro/efro#WithdrawnQualification
 :WithdrawnQualification rdf:type owl:Class ;
                         rdfs:subClassOf :LearningAim ;
                         <http://purl.org/dc/terms/description> "A learning aim or qualification that a student has formally withdrawn from before completion." ;
@@ -3620,7 +3620,7 @@ This status also ensures that students are only funded at one institution at a t
                         <http://www.w3.org/2004/02/skos/core#example> "Withdrawal due to personal reasons or a change in the study program, with funding adjustments made accordingly​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawnStatus
+###  http://www.w3id.org/efro/efro#WithdrawnStatus
 :WithdrawnStatus rdf:type owl:Class ;
                  rdfs:subClassOf :EnrollmentStatus ;
                  <http://purl.org/dc/terms/description> "Status indicating that a student has formally withdrawn from their study program." ;
@@ -3628,7 +3628,7 @@ This status also ensures that students are only funded at one institution at a t
                  <http://www.w3.org/2004/02/skos/core#example> "A withdrawn student is subject to funding adjustments based on their attendance before withdrawal​." .
 
 
-###  http://www.w3id.org/EFRO/EFRO#WithdrawnStudent
+###  http://www.w3id.org/efro/efro#WithdrawnStudent
 :WithdrawnStudent rdf:type owl:Class ;
                   owl:equivalentClass [ owl:intersectionOf ( :Student
                                                              [ rdf:type owl:Restriction ;
@@ -3644,7 +3644,7 @@ This status also ensures that students are only funded at one institution at a t
                   <http://www.w3.org/2004/02/skos/core#example> "A student who leaves their program after completing 6 weeks but before achieving their qualification​" .
 
 
-###  http://www.w3id.org/EFRO/EFRO#YoungPerson
+###  http://www.w3id.org/efro/efro#YoungPerson
 :YoungPerson rdf:type owl:Class ;
              rdfs:subClassOf :Participant ;
              <http://purl.org/dc/terms/description> "A participant aged 16-19 (or up to 24 with an Education, Health, and Care Plan) engaged in a study program or traineeship." ;
