@@ -19,7 +19,7 @@ EFRO addresses challenges in educational compliance management through formal re
 | 🔗 RDF/OWL Ontology                | [EFRO.rdf](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO.rdf) |
 | 🔗 RDF/OWL Individuals             | [EFRO_individuals.rdf](https://github.com/RGU-Computing/EFRO/blob/main/EFRO/EFRO_individuals.rdf) |
 | 📖 HTML Documentation              | [View Docs](https://rgu-computing.github.io/EFRO/EFRO/docs/index-en.html)  |
-| 🧪 Competency Questions            | [Competency_Questions](https://github.com/RGU-Computing/EFRO/blob/main/CompetencyQuestions/CompetencyQuestions.pdf) |
+| 🧪 Competency Questions            | [Competency_Questions](https://github.com/RGU-Computing/EFRO/blob/main/CompetencyQuestions/CompetencyQuestions.md) |
 | 📄 License (CC BY 4.0)             | [View License](https://creativecommons.org/licenses/by/4.0/) |
 
 
