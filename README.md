@@ -23,13 +23,6 @@ EFRO addresses challenges in educational compliance management through formal re
 | 📄 License (CC BY 4.0)             | [View License](https://creativecommons.org/licenses/by/4.0/) |
 
 
----
 
-## 🧾 Citation
-
-> Umair Arshad et al., “**EFRO: An Ontology for Education Funding Compliance**,” submitted to ISWC 2025.  
-> GitHub Repo: [https://github.com/RGU-Computing/EFRO](https://github.com/RGU-Computing/EFRO)
-
----
 
 
