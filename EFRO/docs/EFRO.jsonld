@@ -3938,7 +3938,7 @@
     "@id" : "http://www.w3id.org/efro/efro#FundingRegulations"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "giverned By"
+    "@value" : "Governed By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3id.org/efro/efro#FundingElement"
@@ -7146,3 +7146,4 @@
     "@id" : "http://www.w3id.org/efro/efro#LearningAim"
   } ]
 } ]
+
