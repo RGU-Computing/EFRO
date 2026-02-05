@@ -109,7 +109,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://www.w3id.org/efro/efro#givernedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3id.org/efro/efro#givernedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/efro/efro#FundingRegulations> .
 <http://www.w3id.org/efro/efro#givernedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/efro/efro#FundingElement> .
-<http://www.w3id.org/efro/efro#givernedBy> <http://www.w3.org/2000/01/rdf-schema#label> "giverned By" .
+<http://www.w3id.org/efro/efro#givernedBy> <http://www.w3.org/2000/01/rdf-schema#label> "governed By" .
 # 
 # http://www.w3id.org/efro/efro#hasAchievementStatus
 <http://www.w3id.org/efro/efro#hasAchievementStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
