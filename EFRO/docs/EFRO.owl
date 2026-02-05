@@ -203,7 +203,7 @@
     <owl:ObjectProperty rdf:about="http://www.w3id.org/efro/efro#givernedBy">
         <rdfs:domain rdf:resource="http://www.w3id.org/efro/efro#FundingRegulations"/>
         <rdfs:range rdf:resource="http://www.w3id.org/efro/efro#FundingElement"/>
-        <rdfs:label>giverned By</rdfs:label>
+        <rdfs:label>governed By</rdfs:label>
     </owl:ObjectProperty>
     
 
