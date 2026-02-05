@@ -16611,12 +16611,12 @@
     "attributes" : [ "external", "object" ],
     "id" : "1085"
   }, {
-    "iri" : "http://www.w3id.org/EFRO/EFRO#givernedBy",
+    "iri" : "http://www.w3id.org/EFRO/EFRO#governedBy",
     "baseIri" : "http://www.w3id.org/EFRO/EFRO",
     "range" : "56",
     "label" : {
-      "IRI-based" : "givernedBy",
-      "undefined" : "giverned By"
+      "IRI-based" : "governedBy",
+      "undefined" : "governed By"
     },
     "domain" : "824",
     "attributes" : [ "object" ],
@@ -18784,4 +18784,5 @@
     "attributes" : [ "external", "functional", "datatype" ],
     "id" : "1221"
   } ]
+
 }
