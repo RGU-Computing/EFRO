@@ -1611,7 +1611,11 @@
         <rdfs:label>providesGeneralAssistance</rdfs:label>
     </owl:ObjectProperty>
     
+<!-- http://www.w3id.org/efro/efro#produces --> <owl:ObjectProperty rdf:about="http://www.w3id.org/efro/efro#produces"> <owl:inverseOf rdf:resource="http://www.w3id.org/efro/efro#isProducedBy"/> <rdfs:domain rdf:resource="http://www.w3id.org/efro/efro#Activity"/> <rdfs:range rdf:resource="http://www.w3id.org/efro/efro#Document"/> <dcterms:description xml:lang="en">Indicates that an activity generates or produces a document as an output, such as completion certificates, assessment reports, or enrollment forms.</dcterms:description> <rdfs:label>produces</rdfs:label> </owl:ObjectProperty>
 
+
+
+<!-- http://www.w3id.org/efro/efro#isProducedBy --> <owl:ObjectProperty rdf:about="http://www.w3id.org/efro/efro#isProducedBy"> <owl:inverseOf rdf:resource="http://www.w3id.org/efro/efro#produces"/> <rdfs:domain rdf:resource="http://www.w3id.org/efro/efro#Document"/> <rdfs:range rdf:resource="http://www.w3id.org/efro/efro#Activity"/> <dcterms:description xml:lang="en">Indicates that a document is generated or produced by a specific activity.</dcterms:description> <rdfs:label>isProducedBy</rdfs:label> </owl:ObjectProperty>
 
     <!-- http://www.w3id.org/efro/efro#providesService -->
 
