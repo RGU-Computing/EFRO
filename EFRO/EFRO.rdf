@@ -1775,7 +1775,29 @@
         <dcterms:description xml:lang="en">Specifies that a funding application, enrolment process, or audit requires specific documentation.</dcterms:description>
         <rdfs:label>requiresDocumentation</rdfs:label>
     </owl:ObjectProperty>
+
+
+    <!-- http://www.w3id.org/efro/efro#regulatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/efro/efro#regulatedBy">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/efro/efro#regulates"/>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/efro/efro#FundingRegulations"/>
+        <dcterms:description xml:lang="en">Links educational programmes to the funding regulations that govern their delivery, compliance requirements, and funding eligibility criteria.</dcterms:description>
+        <rdfs:label>regulatedBy</rdfs:label>
+    </owl:ObjectProperty>
     
+
+
+    <!-- http://www.w3id.org/efro/efro#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/efro/efro#regulates">
+        <owl:inverseOf rdf:resource="http://www.w3id.org/efro/efro#regulatedBy"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/efro/efro#FundingRegulations"/>
+        <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+        <dcterms:description xml:lang="en">Indicates which educational programmes are governed by this funding regulation.</dcterms:description>
+        <rdfs:label>regulates</rdfs:label>
+    </owl:ObjectProperty>
 
 
     <!-- http://www.w3id.org/efro/efro#resets -->
